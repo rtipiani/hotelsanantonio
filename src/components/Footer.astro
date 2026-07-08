@@ -1,0 +1,134 @@
+---
+import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa6';
+import { FaTripadvisor } from 'react-icons/fa';
+
+interface Props {
+  lang?: 'es' | 'en';
+}
+
+const { lang = 'es' } = Astro.props;
+
+const t = {
+  es: {
+    desc: "Tu refugio urbano de 3 estrellas. Donde el confort corporativo y la calidez familiar se encuentran en Miraflores, Arequipa.",
+    contact: "Contacto",
+    linksTitle: "Enlaces Rápidos",
+    links: [
+      { name: "Habitaciones", href: "/habitaciones" },
+      { name: "Servicios", href: "/servicios" },
+      { name: "Galería", href: "/galeria" },
+      { name: "Sobre Nosotros", href: "/#nosotros" }
+    ],
+    newsletterTitle: "Boletín",
+    newsletterDesc: "Suscríbete para recibir ofertas exclusivas y novedades.",
+    emailPlaceholder: "Tu correo electrónico",
+    send: "Enviar",
+    rights: "Todos los derechos reservados.",
+    privacy: "Política de Privacidad",
+    terms: "Términos y Condiciones"
+  },
+  en: {
+    desc: "Your 3-star urban haven. Where corporate comfort and family warmth meet in Miraflores, Arequipa.",
+    contact: "Contact",
+    linksTitle: "Quick Links",
+    links: [
+      { name: "Rooms", href: "/en/habitaciones" },
+      { name: "Services", href: "/en/servicios" },
+      { name: "Gallery", href: "/en/galeria" },
+      { name: "About Us", href: "/en/#nosotros" }
+    ],
+    newsletterTitle: "Newsletter",
+    newsletterDesc: "Subscribe to receive exclusive offers and news.",
+    emailPlaceholder: "Your email address",
+    send: "Submit",
+    rights: "All rights reserved.",
+    privacy: "Privacy Policy",
+    terms: "Terms and Conditions"
+  }
+}[lang];
+---
+
+<footer class="bg-brand-text text-white py-20">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12">
+    
+    <div class="md:col-span-1">
+      <img 
+        src="/logo_sanAntonio.png" 
+        alt="Hotel Plaza San Antonio" 
+        class="h-16 w-auto object-contain mb-6 brightness-0 invert opacity-90"
+      />
+      <p class="text-white/60 text-sm leading-relaxed mb-8">
+        {t.desc}
+      </p>
+      
+      <div class="flex gap-5">
+        <!-- Facebook -->
+        <a href="#" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-brand-primary transition-colors" aria-label="Facebook">
+          <FaFacebookF className="h-5 w-5" />
+        </a>
+        <!-- Instagram -->
+        <a href="#" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-brand-primary transition-colors" aria-label="Instagram">
+          <FaInstagram className="h-5 w-5" />
+        </a>
+        <!-- TikTok -->
+        <a href="#" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-brand-primary transition-colors" aria-label="TikTok">
+          <FaTiktok className="h-5 w-5" />
+        </a>
+        <!-- YouTube -->
+        <a href="#" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-brand-primary transition-colors" aria-label="YouTube">
+          <FaYoutube className="h-5 w-5" />
+        </a>
+        <!-- TripAdvisor -->
+        <a href="#" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-brand-primary transition-colors" aria-label="TripAdvisor">
+          <FaTripadvisor className="h-5 w-5" />
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="font-bold uppercase tracking-widest text-sm mb-6">{t.contact}</h3>
+      <ul class="space-y-4 text-white/60 text-sm">
+        <li>Parque San Antonio 200, Miraflores</li>
+        <li>Arequipa, Perú</li>
+        <li>WA: +51 973 341 847</li>
+        <li>{lang === 'es' ? 'Recepción' : 'Reception'}: (+51) 054 220502</li>
+        <li>reservas@hotelplazasanantonio.com.pe</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-bold uppercase tracking-widest text-sm mb-6">{t.linksTitle}</h3>
+      <ul class="space-y-4 text-white/60 text-sm">
+        {t.links.map((link) => (
+          <li><a href={link.href} class="hover:text-brand-primary transition-colors">{link.name}</a></li>
+        ))}
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-bold uppercase tracking-widest text-sm mb-6">{t.newsletterTitle}</h3>
+      <p class="text-white/60 text-sm mb-4">
+        {t.newsletterDesc}
+      </p>
+      <form class="flex border-b border-white/20 pb-2">
+        <input 
+          type="email" 
+          placeholder={t.emailPlaceholder} 
+          class="bg-transparent outline-none text-sm w-full text-white placeholder-white/30"
+        />
+        <button type="submit" class="text-brand-primary hover:text-brand-primary-light uppercase text-sm font-bold tracking-widest transition-colors">
+          {t.send}
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 md:px-12 mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+    <p>&copy; {new Date().getFullYear()} Hotel San Antonio Arequipa. {t.rights}</p>
+    <div class="flex gap-4">
+      <a href="#" class="hover:text-white transition-colors">{t.privacy}</a>
+      <a href="#" class="hover:text-white transition-colors">{t.terms}</a>
+    </div>
+  </div>
+</footer>

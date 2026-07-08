@@ -1,0 +1,76 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { 
+  title, 
+  description = "Hotel Plaza San Antonio. Tu refugio urbano corporativo y familiar en Miraflores, Arequipa. A 10 minutos de la Plaza de Armas. Vistas únicas, sala de reuniones y gimnasio." 
+} = Astro.props;
+const currentLocale = Astro.currentLocale || 'es';
+---
+
+<!doctype html>
+<html lang={currentLocale}>
+  <head>
+    <ClientRouter />
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="Hotel 3 estrellas Arequipa, Hotel corporativo Arequipa, Hotel familiar Arequipa, Hotel cerca al centro Arequipa, Alojamiento Miraflores Arequipa, Refugio urbano Arequipa" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Robots y Canonical -->
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href={Astro.url.href} />
+    
+    <!-- Open Graph & Twitter Tags -->
+    <meta property="og:title" content={`${title} | Hotel Plaza San Antonio (3 Estrellas)`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${title} | Hotel Plaza San Antonio`} />
+    <meta name="twitter:description" content={description} />
+    
+    <!-- JSON-LD Schema.org para Hoteles -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Hotel Plaza San Antonio",
+      "description": description,
+      "starRating": {
+        "@type": "Rating",
+        "ratingValue": "3"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Parque San Antonio 200, Miraflores",
+        "addressLocality": "Arequipa",
+        "addressRegion": "ARE",
+        "addressCountry": "PE"
+      },
+      "telephone": "+51054220502",
+      "email": "reservas@hotelplazasanantonio.com.pe",
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Gimnasio", "value": "True" },
+        { "@type": "LocationFeatureSpecification", "name": "Sala de reuniones", "value": "True" }
+      ]
+    })} />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <title>{title} | Hotel Plaza San Antonio Arequipa</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <slot />
+  </body>
+</html>

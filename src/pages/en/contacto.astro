@@ -1,0 +1,58 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="Contact">
+  <Header lang="en" client:load />
+  <main class="min-h-screen pt-32 pb-24 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-serif text-brand-text mb-6">Contact Us</h1>
+        <p class="text-brand-text-muted text-lg">We are here to answer your questions and help with your corporate or family reservation.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="bg-brand-bg p-8 flex flex-col justify-center">
+          <h3 class="font-bold uppercase tracking-widest text-brand-primary mb-6 text-sm">Contact Information</h3>
+          <ul class="space-y-6 text-brand-text">
+            <li>
+              <strong class="block text-xs uppercase tracking-widest text-brand-text-muted mb-1">Address:</strong> 
+              Parque San Antonio 200, Miraflores, Arequipa, Perú
+            </li>
+            <li>
+              <strong class="block text-xs uppercase tracking-widest text-brand-text-muted mb-1">Reservations:</strong> 
+              reservas@hotelplazasanantonio.com.pe<br/>
+              WA: +51 973 341 847 / +51 960 762 350
+            </li>
+            <li>
+              <strong class="block text-xs uppercase tracking-widest text-brand-text-muted mb-1">Reception:</strong> 
+              Landline: (+51) 054 220502<br/>
+              WA: +51 967 454 949
+            </li>
+          </ul>
+        </div>
+        
+        <form class="flex flex-col gap-6">
+          <div>
+            <label class="block text-xs font-bold tracking-widest text-brand-text uppercase mb-2">Full Name</label>
+            <input type="text" class="w-full bg-brand-bg p-4 focus:outline-none focus:ring-2 focus:ring-brand-primary" placeholder="e.g. John Doe" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold tracking-widest text-brand-text uppercase mb-2">Email Address</label>
+            <input type="email" class="w-full bg-brand-bg p-4 focus:outline-none focus:ring-2 focus:ring-brand-primary" placeholder="email@company.com" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold tracking-widest text-brand-text uppercase mb-2">Message</label>
+            <textarea rows="4" class="w-full bg-brand-bg p-4 focus:outline-none focus:ring-2 focus:ring-brand-primary" placeholder="How can we help you?"></textarea>
+          </div>
+          <button type="submit" class="bg-brand-primary text-white font-bold uppercase tracking-[0.2em] text-[11px] py-4 hover:bg-brand-primary-dark transition-colors">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <Footer lang="en" />
+</Layout>

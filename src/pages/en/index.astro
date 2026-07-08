@@ -1,0 +1,18 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import HeroSlider from '../../components/HeroSlider';
+import Features from '../../components/Features';
+import RoomsPreview from '../../components/RoomsPreview';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="Home">
+  <Header lang="en" client:load />
+  <main>
+    <HeroSlider lang="en" client:load />
+    <Features lang="en" client:visible />
+    <RoomsPreview lang="en" client:visible />
+  </main>
+  <Footer lang="en" />
+</Layout>

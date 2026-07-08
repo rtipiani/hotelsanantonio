@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #ea5d0b;
+  --color-brand-primary-light: #ff7f36;
+  --color-brand-primary-dark: #c24b07;
+  --color-brand-bg: #ebeae6;
+  --color-brand-surface: #ffffff;
+  --color-brand-text: #323232;
+  --color-brand-text-muted: #666666;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-text font-sans antialiased selection:bg-brand-primary selection:text-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-normal tracking-tight;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

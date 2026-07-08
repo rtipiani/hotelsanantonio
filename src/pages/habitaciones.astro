@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import RoomsPreview from '../components/RoomsPreview';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Habitaciones">
+  <Header client:load />
+  <main class="min-h-screen bg-white">
+    <RoomsPreview client:load />
+  </main>
+  <Footer />
+</Layout>
