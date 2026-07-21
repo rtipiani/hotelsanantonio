@@ -1,0 +1,71 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+export const prerender = false;
+
+let analyticsData: any = {};
+try {
+  const filePath = path.join(process.cwd(), 'src', 'data', 'analytics.json');
+  const fileContent = await fs.readFile(filePath, 'utf-8');
+  analyticsData = JSON.parse(fileContent);
+} catch(e) {
+  // Sin datos aún
+}
+
+const stats = Object.entries(analyticsData)
+  .map(([key, data]: any) => ({ ...data }))
+  .sort((a, b) => b.clicks - a.clicks);
+---
+
+<AdminLayout title="Analíticas">
+  <div class="mb-8">
+    <h2 class="text-2xl font-bold font-sans text-gray-900 dark:text-white mb-1">Analíticas Nativas</h2>
+    <p class="text-gray-500 dark:text-zinc-400 text-sm">Resumen de interacciones y clics en los botones del panel de administración.</p>
+  </div>
+
+  <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-100 dark:border-zinc-800 p-6 shadow-sm">
+    <div class="flex justify-between items-center mb-6">
+      <h3 class="text-base font-bold font-sans text-gray-900 dark:text-white">Clics Totales por Botón</h3>
+    </div>
+    
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="text-xs uppercase text-gray-400 dark:text-zinc-500 border-b border-gray-100 dark:border-zinc-800">
+            <th class="pb-3 font-medium">Elemento / Botón</th>
+            <th class="pb-3 font-medium">Ubicación (Ruta)</th>
+            <th class="pb-3 font-medium">Último Clic</th>
+            <th class="pb-3 font-medium text-right">Total Clics</th>
+          </tr>
+        </thead>
+        <tbody class="text-sm">
+          {stats.length === 0 ? (
+            <tr>
+              <td colspan="4" class="py-12 text-center text-gray-500">
+                <div class="flex flex-col items-center gap-2">
+                  <p class="font-medium">No hay clics registrados aún.</p>
+                  <p class="text-xs">Navega por el panel y haz clic en botones para ver datos aquí.</p>
+                </div>
+              </td>
+            </tr>
+          ) : (
+            stats.map(stat => (
+              <tr class="border-b border-gray-50 dark:border-zinc-800/50 hover:bg-gray-50/50 dark:hover:bg-zinc-800/20 transition-colors">
+                <td class="py-4 font-semibold text-gray-900 dark:text-white">{stat.label}</td>
+                <td class="py-4 text-gray-500">{stat.path}</td>
+                <td class="py-4 text-gray-500">{new Date(stat.lastClicked).toLocaleString()}</td>
+                <td class="py-4 text-right">
+                  <span class="inline-flex items-center justify-center bg-brand-primary/10 text-brand-primary font-bold px-3 py-1 rounded-full">
+                    {stat.clicks}
+                  </span>
+                </td>
+              </tr>
+            ))
+          )}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</AdminLayout>

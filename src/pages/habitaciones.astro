@@ -8,7 +8,7 @@ import Footer from '../components/Footer.astro';
 <Layout title="Habitaciones">
   <Header client:load />
   <main class="min-h-screen bg-white">
-    <RoomsPreview client:load />
+    <RoomsPreview client:load showAll={true} />
   </main>
   <Footer />
 </Layout>

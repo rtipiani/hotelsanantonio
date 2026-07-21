@@ -2,7 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header';
 import HeroSlider from '../components/HeroSlider';
+import Welcome from '../components/Welcome';
 import Features from '../components/Features';
+import Location from '../components/Location';
+import WebBenefits from '../components/WebBenefits';
 import RoomsPreview from '../components/RoomsPreview';
 import Footer from '../components/Footer.astro';
 ---
@@ -11,7 +14,10 @@ import Footer from '../components/Footer.astro';
   <Header client:load />
   <main>
     <HeroSlider client:load />
+    <WebBenefits client:visible />
+    <Welcome />
     <Features client:visible />
+    <Location />
     <RoomsPreview client:visible />
   </main>
   <Footer />

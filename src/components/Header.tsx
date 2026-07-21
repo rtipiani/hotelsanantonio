@@ -78,8 +78,8 @@ export default function Header({ lang = 'es' }: HeaderProps) {
       </div>
 
       <header className={clsx(
-        'sticky top-0 w-full z-50 transition-all duration-300 ease-in-out bg-white border-b border-gray-100',
-        isScrolled ? 'py-2 shadow-md' : 'py-4'
+        'sticky top-0 w-full z-50 transition-all duration-300 ease-in-out border-b',
+        isScrolled ? 'py-2 bg-white/90 backdrop-blur-md shadow-lg shadow-black/5 border-gray-200/50' : 'py-4 bg-white border-gray-100'
       )}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
           {/* Logo */}
@@ -92,12 +92,22 @@ export default function Header({ lang = 'es' }: HeaderProps) {
           </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden xl:flex items-center gap-8">
-          {currentLinks.map((link) => (
-            <a key={link.name} href={link.href} className="text-[11px] font-bold uppercase tracking-[0.2em] text-brand-text hover:text-brand-primary transition-colors">
-              {link.name}
-            </a>
-          ))}
+        <nav className="hidden xl:flex items-center gap-4 lg:gap-5 2xl:gap-8">
+          {currentLinks.map((link) => {
+            const isActive = currentPath === link.href || currentPath === link.href + '/';
+            return (
+              <a 
+                key={link.name} 
+                href={link.href} 
+                className={clsx(
+                  "text-[10px] 2xl:text-[11px] font-bold uppercase tracking-widest transition-colors hover:text-brand-primary",
+                  isActive ? "text-brand-primary" : "text-brand-text"
+                )}
+              >
+                {link.name}
+              </a>
+            );
+          })}
           
           {/* Language Switcher */}
           <div className="flex items-center gap-2 border-l border-gray-200 pl-8 ml-2">
@@ -111,7 +121,7 @@ export default function Header({ lang = 'es' }: HeaderProps) {
             href="https://wa.me/51973341847?text=Hola,%20deseo%20hacer%20una%20reserva." 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-brand-primary hover:bg-brand-primary-dark text-white px-8 py-3 text-[11px] font-bold uppercase tracking-[0.2em] transition-colors ml-4"
+            className="bg-brand-primary hover:bg-brand-text text-white px-8 py-3 text-[11px] font-bold uppercase tracking-[0.2em] transition-all ml-4 shadow-sm hover:shadow-lg shadow-brand-primary/20"
           >
             {t.book}
           </a>
@@ -140,16 +150,22 @@ export default function Header({ lang = 'es' }: HeaderProps) {
             className="absolute top-full left-0 w-full bg-white shadow-xl border-t border-gray-100 xl:hidden overflow-hidden"
           >
             <div className="flex flex-col px-6 py-8 gap-6">
-              {currentLinks.map((link) => (
-                <a 
-                  key={link.name} 
-                  href={link.href} 
-                  className="text-sm font-bold uppercase tracking-widest text-brand-text hover:text-brand-primary"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {link.name}
-                </a>
-              ))}
+              {currentLinks.map((link) => {
+                const isActive = currentPath === link.href || currentPath === link.href + '/';
+                return (
+                  <a 
+                    key={link.name} 
+                    href={link.href} 
+                    className={clsx(
+                      "text-sm font-bold uppercase tracking-widest hover:text-brand-primary",
+                      isActive ? "text-brand-primary" : "text-brand-text"
+                    )}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.name}
+                  </a>
+                );
+              })}
               <hr className="border-gray-100 my-2" />
               <div className="flex items-center gap-4">
                 <Globe className="w-5 h-5 text-brand-text" />
@@ -172,3 +188,4 @@ export default function Header({ lang = 'es' }: HeaderProps) {
     </>
   );
 }
+

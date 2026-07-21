@@ -1,14 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header';
-import Features from '../components/Features';
+import ServicesFullList from '../components/ServicesFullList';
 import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Servicios">
   <Header client:load />
   <main class="min-h-screen bg-brand-bg">
-    <Features client:load />
+    <ServicesFullList client:load />
   </main>
   <Footer />
 </Layout>

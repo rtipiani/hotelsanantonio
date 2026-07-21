@@ -162,7 +162,7 @@ export default function HeroSlider({ lang = 'es' }: HeroSliderProps) {
               {slides[current].subtitle}
             </p>
             
-            <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-serif mb-8 leading-[1.1]">
+            <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-serif mb-8 leading-[1.1]">
               {slides[current].title}
             </h1>
             
@@ -173,7 +173,7 @@ export default function HeroSlider({ lang = 'es' }: HeroSliderProps) {
             <div>
               <a 
                 href={slides[current].buttonLink} 
-                className="inline-block bg-brand-primary text-white hover:bg-brand-primary-dark px-10 py-4 uppercase tracking-[0.2em] text-[11px] font-bold transition-all duration-300"
+                className="inline-block bg-brand-primary text-white hover:bg-brand-primary/90 px-10 py-4 uppercase tracking-[0.2em] text-[11px] font-bold transition-all duration-300"
               >
                 {slides[current].buttonText}
               </a>
@@ -220,3 +220,4 @@ export default function HeroSlider({ lang = 'es' }: HeroSliderProps) {
     </section>
   );
 }
+

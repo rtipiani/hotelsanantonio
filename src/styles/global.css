@@ -1,16 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-primary: #ea5d0b;
-  --color-brand-primary-light: #ff7f36;
-  --color-brand-primary-dark: #c24b07;
-  --color-brand-bg: #ebeae6;
+  --color-brand-primary: #ff6a00;
+  --color-brand-bg: #f5f5f5;
   --color-brand-surface: #ffffff;
-  --color-brand-text: #323232;
-  --color-brand-text-muted: #666666;
+  --color-brand-text: #222222;
+  --color-brand-text-muted: #4a4a4a;
   
-  --font-serif: "Playfair Display", serif;
-  --font-sans: "Inter", sans-serif;
+  --font-serif: "Cinzel", serif;
+  --font-sans: "Montserrat", sans-serif;
 }
 
 @layer base {

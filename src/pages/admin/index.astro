@@ -1,0 +1,131 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import { DashboardCard } from '../../components/admin/DashboardCard.tsx';
+import { CalendarCheck, Users, Banknote, BedDouble } from 'lucide-react';
+---
+
+<AdminLayout title="Dashboard">
+  
+  <div class="mb-8">
+    <h2 class="text-2xl font-bold font-sans text-gray-900 dark:text-white mb-1">Bienvenido de nuevo, Administrador</h2>
+    <p class="text-gray-500 dark:text-zinc-400 text-sm">Aquí tienes un resumen de la actividad del Hotel San Antonio el día de hoy.</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+    <DashboardCard 
+      client:load
+      title="Reservas Activas" 
+      value="24" 
+      icon={CalendarCheck} 
+      trend="up"
+      trendValue="+12%"
+      delay={0.1}
+    />
+    <DashboardCard 
+      client:load
+      title="Huéspedes" 
+      value="86" 
+      icon={Users} 
+      trend="up"
+      trendValue="+5%"
+      delay={0.2}
+    />
+    <DashboardCard 
+      client:load
+      title="Ingresos del Mes" 
+      value="$12,450" 
+      icon={Banknote} 
+      trend="neutral"
+      trendValue="0%"
+      delay={0.3}
+    />
+    <DashboardCard 
+      client:load
+      title="Ocupación" 
+      value="78%" 
+      icon={BedDouble} 
+      trend="down"
+      trendValue="-2%"
+      delay={0.4}
+    />
+  </div>
+
+  <!-- Panel de Detalles Recientes -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+    <div class="lg:col-span-2 bg-white dark:bg-zinc-900 rounded-2xl border border-gray-100 dark:border-zinc-800 p-6 shadow-sm">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-base font-bold font-sans text-gray-900 dark:text-white">Reservas Recientes</h3>
+        <button class="text-xs text-brand-primary hover:text-brand-primary/90 font-semibold">Ver todas</button>
+      </div>
+      
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="text-xs uppercase text-gray-400 dark:text-zinc-500 border-b border-gray-100 dark:border-zinc-800">
+              <th class="pb-3 font-medium">Huésped</th>
+              <th class="pb-3 font-medium">Habitación</th>
+              <th class="pb-3 font-medium">Check-in</th>
+              <th class="pb-3 font-medium">Estado</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm">
+            <tr class="border-b border-gray-50 dark:border-zinc-800/50 hover:bg-gray-50/50 dark:hover:bg-zinc-800/20 transition-colors">
+              <td class="py-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold text-xs">CM</div>
+                  <div>
+                    <p class="font-semibold text-gray-900 dark:text-white">Carlos Mendoza</p>
+                    <p class="text-xs text-gray-500">carlos.m@email.com</p>
+                  </div>
+                </div>
+              </td>
+              <td class="py-4 text-gray-600 dark:text-zinc-400">Suite Presidencial</td>
+              <td class="py-4 text-gray-600 dark:text-zinc-400">Hoy, 14:00</td>
+              <td class="py-4">
+                <span class="px-2 py-1 bg-green-100 text-green-700 dark:bg-green-500/10 dark:text-green-400 rounded-md text-xs font-medium">Confirmada</span>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-50 dark:border-zinc-800/50 hover:bg-gray-50/50 dark:hover:bg-zinc-800/20 transition-colors">
+              <td class="py-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 flex items-center justify-center font-bold text-xs">AP</div>
+                  <div>
+                    <p class="font-semibold text-gray-900 dark:text-white">Ana Pérez</p>
+                    <p class="text-xs text-gray-500">ana.perez@email.com</p>
+                  </div>
+                </div>
+              </td>
+              <td class="py-4 text-gray-600 dark:text-zinc-400">Habitación Doble</td>
+              <td class="py-4 text-gray-600 dark:text-zinc-400">Mañana, 11:00</td>
+              <td class="py-4">
+                <span class="px-2 py-1 bg-yellow-100 text-yellow-700 dark:bg-yellow-500/10 dark:text-yellow-400 rounded-md text-xs font-medium">Pendiente</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Panel lateral (Acciones rápidas) -->
+    <div class="bg-gradient-to-br from-brand-primary to-brand-primary/90 rounded-2xl p-6 text-white shadow-lg shadow-brand-primary/20 relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full blur-2xl -translate-y-10 translate-x-10 pointer-events-none"></div>
+      <h3 class="text-lg font-bold font-sans mb-5">Acciones Rápidas</h3>
+      <div class="space-y-3 relative z-10">
+        <button class="w-full py-2.5 px-4 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl flex items-center justify-between transition-colors backdrop-blur-sm">
+          <span class="font-medium text-sm">Nueva Reserva</span>
+          <CalendarCheck size={16} />
+        </button>
+        <button class="w-full py-2.5 px-4 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl flex items-center justify-between transition-colors backdrop-blur-sm">
+          <span class="font-medium text-sm">Gestionar Habitaciones</span>
+          <BedDouble size={16} />
+        </button>
+        <button class="w-full py-2.5 px-4 bg-white text-brand-primary hover:bg-gray-50 rounded-xl flex items-center justify-between transition-colors shadow-sm font-bold mt-4 text-sm">
+          <span class="">Generar Reporte</span>
+          <Banknote size={16} />
+        </button>
+      </div>
+    </div>
+  </div>
+
+</AdminLayout>
+

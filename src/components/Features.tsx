@@ -78,8 +78,8 @@ export default function Features({ lang = 'es' }: FeaturesProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mt-16">
           {data.features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center text-center group">
-              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 group-hover:bg-brand-primary transition-all duration-300">
-                <feature.icon className="w-7 h-7 text-brand-primary group-hover:text-white transition-colors" />
+              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-6 shadow-md shadow-brand-primary/5 group-hover:-translate-y-2 group-hover:shadow-xl group-hover:shadow-brand-primary/20 group-hover:bg-brand-primary transition-all duration-300">
+                <feature.icon className="w-7 h-7 text-brand-primary group-hover:text-white transition-colors duration-300" />
               </div>
               <h3 className="text-xl font-bold font-serif text-brand-text mb-3">{feature.title}</h3>
               <p className="text-brand-text-muted text-sm leading-relaxed">

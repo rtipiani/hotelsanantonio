@@ -1,0 +1,30 @@
+{
+  "/admin::Nueva Reserva": {
+    "clicks": 1,
+    "tag": "button",
+    "path": "/admin",
+    "label": "Nueva Reserva",
+    "lastClicked": "2026-07-21T21:16:59.367Z"
+  },
+  "/admin::Gestionar Habitaciones": {
+    "clicks": 1,
+    "tag": "button",
+    "path": "/admin",
+    "label": "Gestionar Habitaciones",
+    "lastClicked": "2026-07-21T21:17:01.631Z"
+  },
+  "/admin::Habitaciones": {
+    "clicks": 2,
+    "tag": "a",
+    "path": "/admin",
+    "label": "Habitaciones",
+    "lastClicked": "2026-07-21T21:17:06.455Z"
+  },
+  "/admin::Reservas": {
+    "clicks": 1,
+    "tag": "a",
+    "path": "/admin",
+    "label": "Reservas",
+    "lastClicked": "2026-07-21T21:17:10.223Z"
+  }
+}
