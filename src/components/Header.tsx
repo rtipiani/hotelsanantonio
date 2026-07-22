@@ -129,13 +129,17 @@ export default function Header({ lang = 'es' }: HeaderProps) {
 
         {/* Mobile Menu Toggle */}
         <button 
-          className="xl:hidden p-2 text-brand-text"
+          className="xl:hidden p-2 text-brand-text flex items-center justify-center"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-expanded={isMobileMenuOpen}
         >
+          <span className="sr-only">
+            {isMobileMenuOpen ? "Cerrar menú principal" : "Abrir menú principal"}
+          </span>
           {isMobileMenuOpen ? (
-            <X className="w-7 h-7" />
+            <X className="w-7 h-7" aria-hidden="true" />
           ) : (
-            <Menu className="w-7 h-7" />
+            <Menu className="w-7 h-7" aria-hidden="true" />
           )}
         </button>
       </div>

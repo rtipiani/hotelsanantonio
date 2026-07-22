@@ -215,7 +215,7 @@ export default function RoomsPreview({ lang = 'es', showAll = false }: RoomsPrev
     <section id="habitaciones" className="py-12 md:py-16 bg-white relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-10">
-          <span className="text-brand-primary font-bold uppercase tracking-widest text-xs mb-2 block">{data.badge}</span>
+          <span className="text-brand-primary-dark font-bold uppercase tracking-widest text-xs mb-2 block">{data.badge}</span>
           <h2 className="text-3xl md:text-4xl font-serif text-brand-text mb-4">{data.title}</h2>
           <p className="text-brand-text-muted max-w-3xl mx-auto text-base leading-relaxed">
             {data.desc}
@@ -241,11 +241,11 @@ export default function RoomsPreview({ lang = 'es', showAll = false }: RoomsPrev
                 {/* Price tag */}
                 <div className="absolute top-4 right-4 z-20 bg-white/95 backdrop-blur-sm px-4 py-2">
                   <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-1">{data.from}</p>
-                  <p className="text-xl font-serif text-brand-primary">{room.price}</p>
+                  <p className="text-xl font-serif text-brand-primary-dark">{room.price}</p>
                 </div>
               </div>
 
-              <h3 className="text-2xl font-serif text-brand-text mb-3 group-hover:text-brand-primary transition-colors">
+              <h3 className="text-2xl font-serif text-brand-text mb-3 group-hover:text-brand-primary-dark transition-colors">
                 {room.name}
               </h3>
               
@@ -268,7 +268,7 @@ export default function RoomsPreview({ lang = 'es', showAll = false }: RoomsPrev
                 rel="noopener noreferrer"
                 className={clsx(
                   "inline-flex items-center justify-center gap-2 w-full text-xs font-bold uppercase tracking-widest transition-all px-6 py-4 mt-auto",
-                  "bg-brand-primary hover:bg-brand-text text-white shadow-sm hover:shadow-xl shadow-brand-primary/20 hover:shadow-brand-text/20 duration-300"
+                  "bg-brand-primary hover:bg-brand-text text-brand-text hover:text-white shadow-sm hover:shadow-xl shadow-brand-primary/20 hover:shadow-brand-text/20 duration-300"
                 )}
               >
                 <FaWhatsapp className={clsx(
@@ -283,7 +283,7 @@ export default function RoomsPreview({ lang = 'es', showAll = false }: RoomsPrev
         
         {!showAll && (
           <div className="text-center mt-12">
-            <a href="/habitaciones" className="inline-block border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-colors px-8 py-3 uppercase tracking-widest text-sm font-bold">
+            <a href="/habitaciones" className="inline-block border-2 border-brand-primary-dark text-brand-primary-dark hover:bg-brand-primary hover:text-brand-text transition-colors px-8 py-3 uppercase tracking-widest text-sm font-bold">
               Ver todas las habitaciones
             </a>
           </div>

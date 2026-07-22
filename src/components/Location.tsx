@@ -5,7 +5,7 @@ export default function Location() {
     <section className="py-16 md:py-24 bg-white relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row gap-12 items-center">
         <div className="md:w-1/2">
-          <p className="text-brand-primary tracking-[0.2em] uppercase text-xs font-bold mb-4">📍 UBICACIÓN</p>
+          <p className="text-brand-primary-dark tracking-[0.2em] uppercase text-xs font-bold mb-4">📍 UBICACIÓN</p>
           <h2 className="text-3xl md:text-4xl font-serif text-brand-text mb-6">
             En el corazón de la Ciudad Blanca de Arequipa
           </h2>
@@ -17,25 +17,25 @@ export default function Location() {
           
           <ul className="space-y-4">
             <li className="flex items-start gap-4">
-              <div className="mt-1 bg-brand-primary/10 p-2 rounded-full text-brand-primary">
+              <div className="mt-1 bg-brand-primary/10 p-2 rounded-full text-brand-primary-dark">
                 <MapPin className="w-4 h-4" />
               </div>
               <p className="text-brand-text-muted leading-relaxed font-medium text-sm">Frente a la Plaza e Iglesia San Antonio.</p>
             </li>
             <li className="flex items-start gap-4">
-              <div className="mt-1 bg-brand-primary/10 p-2 rounded-full text-brand-primary">
+              <div className="mt-1 bg-brand-primary/10 p-2 rounded-full text-brand-primary-dark">
                 <FaWalking className="w-4 h-4" />
               </div>
               <p className="text-brand-text-muted leading-relaxed text-sm">A solo 10 minutos a pie de la Plaza de Armas y del Centro Histórico de Arequipa.</p>
             </li>
             <li className="flex items-start gap-4">
-              <div className="mt-1 bg-brand-primary/10 p-2 rounded-full text-brand-primary">
+              <div className="mt-1 bg-brand-primary/10 p-2 rounded-full text-brand-primary-dark">
                 <FaPlane className="w-4 h-4" />
               </div>
               <p className="text-brand-text-muted leading-relaxed text-sm">A 15–20 minutos en automóvil del Aeropuerto Internacional Alfredo Rodríguez Ballón.</p>
             </li>
             <li className="flex items-start gap-4">
-              <div className="mt-1 bg-brand-primary/10 p-2 rounded-full text-brand-primary">
+              <div className="mt-1 bg-brand-primary/10 p-2 rounded-full text-brand-primary-dark">
                 <FaBus className="w-4 h-4" />
               </div>
               <p className="text-brand-text-muted leading-relaxed text-sm">A 10–15 minutos en automóvil del Terminal Terrestre de Arequipa.</p>

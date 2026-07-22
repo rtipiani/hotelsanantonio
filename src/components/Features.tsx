@@ -68,7 +68,7 @@ export default function Features({ lang = 'es' }: FeaturesProps) {
     <section id="caracteristicas" className="py-12 md:py-16 bg-brand-bg">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-10">
-          <p className="text-brand-primary tracking-[0.2em] uppercase text-xs font-bold mb-4">{data.badge}</p>
+          <p className="text-brand-primary-dark tracking-[0.2em] uppercase text-xs font-bold mb-4">{data.badge}</p>
           <h2 className="text-4xl md:text-5xl font-serif text-brand-text mb-6">{data.title}</h2>
           <p className="text-brand-text-muted max-w-2xl mx-auto text-lg leading-relaxed">
             {data.desc}
@@ -79,7 +79,7 @@ export default function Features({ lang = 'es' }: FeaturesProps) {
           {data.features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center text-center group">
               <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-6 shadow-md shadow-brand-primary/5 group-hover:-translate-y-2 group-hover:shadow-xl group-hover:shadow-brand-primary/20 group-hover:bg-brand-primary transition-all duration-300">
-                <feature.icon className="w-7 h-7 text-brand-primary group-hover:text-white transition-colors duration-300" />
+                <feature.icon className="w-7 h-7 text-brand-primary-dark group-hover:text-white transition-colors duration-300" />
               </div>
               <h3 className="text-xl font-bold font-serif text-brand-text mb-3">{feature.title}</h3>
               <p className="text-brand-text-muted text-sm leading-relaxed">

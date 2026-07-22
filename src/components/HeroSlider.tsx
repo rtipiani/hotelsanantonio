@@ -34,7 +34,7 @@ const slidesData = {
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1551882547-ff40eb0d1e73?auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80",
       subtitle: "Detalles que Enamoran",
       title: "Diseño y Confort",
       description: "Cada rincón de nuestro hotel está pensado para ofrecerte la mejor experiencia y calidez en tu estadía.",
@@ -81,7 +81,7 @@ const slidesData = {
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1551882547-ff40eb0d1e73?auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80",
       subtitle: "Details to Fall in Love With",
       title: "Design and Comfort",
       description: "Every corner of our hotel is designed to offer you the best experience and warmth during your stay.",
@@ -173,7 +173,7 @@ export default function HeroSlider({ lang = 'es' }: HeroSliderProps) {
             <div>
               <a 
                 href={slides[current].buttonLink} 
-                className="inline-block bg-brand-primary text-white hover:bg-brand-primary/90 px-10 py-4 uppercase tracking-[0.2em] text-[11px] font-bold transition-all duration-300"
+                className="inline-block bg-brand-primary text-brand-text hover:bg-brand-primary/90 px-10 py-4 uppercase tracking-[0.2em] text-[11px] font-bold transition-all duration-300"
               >
                 {slides[current].buttonText}
               </a>
