@@ -1,5 +1,6 @@
 ---
 import { ClientRouter } from 'astro:transitions';
+import { FaWhatsapp } from 'react-icons/fa';
 import '../styles/global.css';
 
 interface Props {
@@ -12,6 +13,11 @@ const {
   description = "Hotel Plaza San Antonio. Tu refugio urbano corporativo y familiar en Miraflores, Arequipa. A 10 minutos de la Plaza de Armas. Vistas únicas, sala de reuniones y gimnasio." 
 } = Astro.props;
 const currentLocale = Astro.currentLocale || 'es';
+const isEnglish = Astro.url.pathname.startsWith('/en') || currentLocale === 'en';
+const waText = isEnglish 
+  ? "Hello! I would like more information about reservations and availability at Hotel Plaza San Antonio." 
+  : "¡Hola! Quisiera más información sobre reservas y disponibilidad en el Hotel Plaza San Antonio.";
+const waUrl = `https://wa.me/51973341847?text=${encodeURIComponent(waText)}`;
 ---
 
 <!doctype html>
@@ -22,7 +28,7 @@ const currentLocale = Astro.currentLocale || 'es';
     <meta name="description" content={description} />
     <meta name="keywords" content="Hotel 3 estrellas Arequipa, Hotel corporativo Arequipa, Hotel familiar Arequipa, Hotel cerca al centro Arequipa, Alojamiento Miraflores Arequipa, Refugio urbano Arequipa" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/logo_sanAntonio.png" />
     <meta name="generator" content={Astro.generator} />
     
     <!-- Robots y Canonical -->
@@ -50,13 +56,15 @@ const currentLocale = Astro.currentLocale || 'es';
       },
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Parque San Antonio 200, Miraflores",
+        "streetAddress": "Parque San Antonio N.° 200, Miraflores",
         "addressLocality": "Arequipa",
-        "addressRegion": "ARE",
+        "addressRegion": "Arequipa",
         "addressCountry": "PE"
       },
-      "telephone": "+51054220502",
+      "telephone": "+51973341847",
       "email": "reservas@hotelplazasanantonio.com.pe",
+      "url": "https://hotelplazasanantonio.com.pe",
+      "priceRange": "$$",
       "amenityFeature": [
         { "@type": "LocationFeatureSpecification", "name": "Gimnasio", "value": "True" },
         { "@type": "LocationFeatureSpecification", "name": "Sala de reuniones", "value": "True" }
@@ -72,5 +80,59 @@ const currentLocale = Astro.currentLocale || 'es';
   </head>
   <body class="flex flex-col min-h-screen">
     <slot />
+    
+    <!-- Contenedor flotante de WhatsApp con animación continua y suave -->
+    <div class="whatsapp-float-container fixed bottom-6 right-6 z-50 flex items-center justify-center">
+      <!-- Onda de pulso externa -->
+      <div class="absolute inset-0 rounded-full bg-[#25D366] animate-pulse-ring pointer-events-none -z-10"></div>
+      
+      <!-- Botón interactivo -->
+      <a
+        href={waUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-[#25D366] hover:bg-[#1EBE5A] text-white p-3.5 md:p-4 rounded-full flex items-center justify-center group transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-2xl shadow-[#25D366]/40"
+        aria-label="WhatsApp"
+      >
+        <span class="absolute right-full mr-3 whitespace-nowrap bg-white text-brand-text font-medium text-xs py-2 px-3.5 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border border-gray-100 hidden md:block">
+          {isEnglish ? "Need help? Chat with us!" : "¿Necesitas ayuda? Chatea con nosotros"}
+        </span>
+        <FaWhatsapp className="w-7 h-7 md:w-8 md:h-8 z-10 relative" />
+      </a>
+    </div>
+
+    <style>
+      @keyframes floating {
+        0%, 100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+
+      @keyframes pulse-ring {
+        0% {
+          transform: scale(0.95);
+          opacity: 0.75;
+        }
+        50% {
+          transform: scale(1.35);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(0.95);
+          opacity: 0;
+        }
+      }
+
+      .whatsapp-float-container {
+        animation: floating 3.2s ease-in-out infinite;
+      }
+
+      .animate-pulse-ring {
+        animation: pulse-ring 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+      }
+    </style>
   </body>
 </html>

@@ -1,69 +1,182 @@
 ---
-import AdminLayout from '../../layouts/AdminLayout.astro';
-import fs from 'node:fs/promises';
-import path from 'node:path';
-
 export const prerender = false;
+import { kv as _kv } from "@vercel/kv";
+const kv = _kv as unknown as { get: <T>(key: string) => Promise<T | null> };
+import AdminLayout from "../../layouts/AdminLayout.astro";
+import { BarChart3, MousePointerClick } from "lucide-react";
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
 
-let analyticsData: any = {};
-try {
-  const filePath = path.join(process.cwd(), 'src', 'data', 'analytics.json');
-  const fileContent = await fs.readFile(filePath, 'utf-8');
-  analyticsData = JSON.parse(fileContent);
-} catch(e) {
-  // Sin datos aún
+const cookieValue = Astro.cookies.get("admin_token")?.value;
+const ADMIN_PASSWORD = import.meta.env.ADMIN_PASSWORD || "admin123";
+
+if (cookieValue !== ADMIN_PASSWORD) {
+  return Astro.redirect("/admin/login");
 }
 
-const stats = Object.entries(analyticsData)
-  .map(([key, data]: any) => ({ ...data }))
-  .sort((a, b) => b.clicks - a.clicks);
+let globalTotal = 0;
+const rooms = [];
+
+try {
+  if (import.meta.env.KV_REST_API_URL && import.meta.env.KV_REST_API_TOKEN) {
+    globalTotal = (await kv.get<number>("clicks:total")) || 0;
+    for (let i = 1; i <= 11; i++) {
+      const name =
+        (await kv.get<string>(`room:${i}:name`)) || `Habitación ${i}`;
+      const total = (await kv.get<number>(`clicks:room:${i}:total`)) || 0;
+      if (total > 0 || name !== `Habitación ${i}`) {
+        rooms.push({ id: i, name, total });
+      }
+    }
+  } else {
+    globalTotal = 15;
+    rooms.push({
+      id: 1,
+      name: "Habitación Individual Básica (Demo)",
+      total: 5,
+    });
+    rooms.push({ id: 2, name: "Habitación Queen Ejecutiva (Demo)", total: 10 });
+  }
+} catch (error) {
+  console.error("Error fetching analytics:", error);
+}
+rooms.sort((a, b) => b.total - a.total);
+
+let generalClicks: any[] = [];
+try {
+  const filePath = join(process.cwd(), 'src', 'data', 'analytics.json');
+  const fileContent = await readFile(filePath, 'utf-8');
+  const analyticsData = JSON.parse(fileContent);
+  generalClicks = Object.values(analyticsData).sort((a: any, b: any) => b.clicks - a.clicks).slice(0, 50);
+} catch (error) {
+  // Ignorar si el archivo no existe
+}
 ---
 
 <AdminLayout title="Analíticas">
   <div class="mb-8">
-    <h2 class="text-2xl font-bold font-sans text-gray-900 dark:text-white mb-1">Analíticas Nativas</h2>
-    <p class="text-gray-500 dark:text-zinc-400 text-sm">Resumen de interacciones y clics en los botones del panel de administración.</p>
+    <h2 class="text-2xl font-bold font-sans text-gray-900 dark:text-white mb-1">
+      Analíticas de Conversión
+    </h2>
+    <p class="text-gray-500 dark:text-zinc-400 text-sm">
+      Monitorea el rendimiento de tus habitaciones y los clics hacia WhatsApp.
+    </p>
   </div>
 
-  <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-100 dark:border-zinc-800 p-6 shadow-sm">
+  <div
+    class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-100 dark:border-zinc-800 p-6 shadow-sm"
+  >
     <div class="flex justify-between items-center mb-6">
-      <h3 class="text-base font-bold font-sans text-gray-900 dark:text-white">Clics Totales por Botón</h3>
+      <h3
+        class="text-base font-bold font-sans text-gray-900 dark:text-white flex items-center gap-2"
+      >
+        <BarChart3 size={20} className="text-brand-primary" />
+        Desglose de Clics por Habitación (WhatsApp)
+      </h3>
     </div>
-    
+
+    {
+      !import.meta.env.KV_REST_API_URL && (
+        <div class="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 p-4 mb-6 rounded text-sm text-amber-800 dark:text-amber-200">
+          <strong>Modo Desarrollo:</strong> La base de datos no está conectada.
+          Mostrando datos Demo. Configura Vercel KV en producción.
+        </div>
+      )
+    }
+
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr
+            class="text-xs uppercase text-gray-400 dark:text-zinc-500 border-b border-gray-100 dark:border-zinc-800"
+          >
+            <th class="pb-3 font-medium">Habitación</th>
+            <th class="pb-3 font-medium text-right">Clics Totales</th>
+            <th class="pb-3 font-medium text-right w-32">Popularidad</th>
+          </tr>
+        </thead>
+        <tbody class="text-sm">
+          {
+            rooms.map((room) => (
+              <tr class="border-b border-gray-50 dark:border-zinc-800/50 hover:bg-gray-50/50 dark:hover:bg-zinc-800/20 transition-colors">
+                <td class="py-4 font-medium text-gray-900 dark:text-white">
+                  {room.name}
+                </td>
+                <td class="py-4 text-right font-bold text-brand-primary">
+                  {room.total}
+                </td>
+                <td class="py-4 text-right">
+                  <div class="w-full bg-gray-100 dark:bg-zinc-800 rounded-full h-1.5 mt-1">
+                    <div
+                      class="bg-brand-primary h-1.5 rounded-full"
+                      style={`width: ${globalTotal > 0 ? (room.total / globalTotal) * 100 : 0}%`}
+                    />
+                  </div>
+                </td>
+              </tr>
+            ))
+          }
+          {
+            rooms.length === 0 && (
+              <tr>
+                <td colspan="3" class="py-8 text-center text-gray-500">
+                  No hay datos registrados aún.
+                </td>
+              </tr>
+            )
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-100 dark:border-zinc-800 p-6 shadow-sm mt-8">
+    <div class="flex justify-between items-center mb-6">
+      <h3 class="text-base font-bold font-sans text-gray-900 dark:text-white flex items-center gap-2">
+        <MousePointerClick size={20} className="text-brand-primary" />
+        Interacciones Generales en la Web
+      </h3>
+    </div>
+
     <div class="overflow-x-auto">
       <table class="w-full text-left border-collapse">
         <thead>
           <tr class="text-xs uppercase text-gray-400 dark:text-zinc-500 border-b border-gray-100 dark:border-zinc-800">
-            <th class="pb-3 font-medium">Elemento / Botón</th>
-            <th class="pb-3 font-medium">Ubicación (Ruta)</th>
-            <th class="pb-3 font-medium">Último Clic</th>
-            <th class="pb-3 font-medium text-right">Total Clics</th>
+            <th class="pb-3 font-medium">Elemento / Etiqueta</th>
+            <th class="pb-3 font-medium">Ruta</th>
+            <th class="pb-3 font-medium text-right">Clics Totales</th>
+            <th class="pb-3 font-medium text-right">Último Clic</th>
           </tr>
         </thead>
         <tbody class="text-sm">
-          {stats.length === 0 ? (
-            <tr>
-              <td colspan="4" class="py-12 text-center text-gray-500">
-                <div class="flex flex-col items-center gap-2">
-                  <p class="font-medium">No hay clics registrados aún.</p>
-                  <p class="text-xs">Navega por el panel y haz clic en botones para ver datos aquí.</p>
-                </div>
-              </td>
-            </tr>
-          ) : (
-            stats.map(stat => (
+          {
+            generalClicks.map((click) => (
               <tr class="border-b border-gray-50 dark:border-zinc-800/50 hover:bg-gray-50/50 dark:hover:bg-zinc-800/20 transition-colors">
-                <td class="py-4 font-semibold text-gray-900 dark:text-white">{stat.label}</td>
-                <td class="py-4 text-gray-500">{stat.path}</td>
-                <td class="py-4 text-gray-500">{new Date(stat.lastClicked).toLocaleString()}</td>
-                <td class="py-4 text-right">
-                  <span class="inline-flex items-center justify-center bg-brand-primary/10 text-brand-primary font-bold px-3 py-1 rounded-full">
-                    {stat.clicks}
-                  </span>
+                <td class="py-4 text-gray-900 dark:text-white">
+                  <div class="font-medium">{click.label}</div>
+                  <div class="text-xs text-gray-500 uppercase">{click.tag}</div>
+                </td>
+                <td class="py-4 text-gray-600 dark:text-zinc-400">
+                  {click.path}
+                </td>
+                <td class="py-4 text-right font-bold text-brand-primary">
+                  {click.clicks}
+                </td>
+                <td class="py-4 text-right text-gray-500 text-xs">
+                  {new Date(click.lastClicked).toLocaleString('es-ES')}
                 </td>
               </tr>
             ))
-          )}
+          }
+          {
+            generalClicks.length === 0 && (
+              <tr>
+                <td colspan="4" class="py-8 text-center text-gray-500">
+                  No hay datos registrados aún.
+                </td>
+              </tr>
+            )
+          }
         </tbody>
       </table>
     </div>

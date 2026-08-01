@@ -8,7 +8,8 @@
     "dist"
   ],
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "types": ["node"],
+    "moduleResolution": "bundler",
+    "lib": ["es2022", "DOM", "DOM.Iterable"]
   }
 }

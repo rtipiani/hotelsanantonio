@@ -1,0 +1,234 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="What to see in Arequipa">
+  <Header lang="en" client:load />
+  
+  <main class="min-h-screen bg-brand-bg">
+    <!-- Hero Banner -->
+    <div class="relative w-full h-[35vh] md:h-[40vh] overflow-hidden">
+      <div class="absolute inset-0 bg-black/60 z-10"></div>
+      <img 
+        src="/arequipa_centro_historico.avif" 
+        alt="Historical Center of Arequipa" 
+        class="w-full h-full object-cover absolute inset-0"
+      />
+      <div class="relative z-20 h-full flex flex-col items-center justify-center text-center px-4">
+        <h1 class="text-3xl md:text-5xl font-cinzel font-bold text-white uppercase tracking-wider mb-4 drop-shadow-lg">
+          Discover Arequipa
+        </h1>
+        <p class="text-base md:text-xl text-white/90 font-light max-w-2xl drop-shadow-md">
+          Fill your trip with adventures and unforgettable experiences.
+        </p>
+      </div>
+    </div>
+
+    <!-- Content Sections -->
+    <div class="max-w-7xl mx-auto px-6 md:px-12 pt-16 md:pt-24 pb-16 md:pb-24">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Text Content -->
+        <div class="space-y-6">
+          <h2 class="font-cinzel text-3xl md:text-4xl text-brand-text font-bold uppercase tracking-wider">
+            Historical Center
+          </h2>
+          <div class="w-20 h-1 bg-brand-primary"></div>
+          <p class="text-lg text-brand-text/80 leading-relaxed font-light">
+            Considered a <strong class="font-semibold text-brand-text">UNESCO World Heritage Site</strong>, Arequipa's historical center is where great adventures begin. Its colonial architecture, featuring unique white volcanic stone craftsmanship, will captivate you from the very first moment.
+          </p>
+          <ul class="space-y-3 text-brand-text/80 mt-6 font-light">
+            <li class="flex items-start">
+              <span class="text-brand-primary mr-3 text-lg leading-none mt-1">✦</span>
+              <span>Colonial architecture crafted in Sillar, the iconic white volcanic rock.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-brand-primary mr-3 text-lg leading-none mt-1">✦</span>
+              <span>The imposing Arequipa Cathedral and its vibrant Plaza de Armas (Main Square).</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-brand-primary mr-3 text-lg leading-none mt-1">✦</span>
+              <span>Unique cultural walks and world-class culinary experiences just steps from our hotel.</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Image Content -->
+        <div class="relative">
+          <img 
+            src="/arequipa_plaza.avif" 
+            alt="Colonial Architecture Arequipa" 
+            loading="lazy"
+            decoding="async"
+            class="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
+          />
+          <div class="absolute -bottom-6 -left-6 bg-white p-5 shadow-xl rounded-lg hidden md:block border border-gray-100">
+            <p class="font-cinzel font-bold text-brand-primary uppercase text-xs tracking-widest text-center">
+              World<br/>Heritage<br/>Site
+            </p>
+          </div>
+          
+          <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-brand-primary/10 rounded-full blur-3xl scale-125"></div>
+        </div>
+      </div>
+      
+      <!-- Divider -->
+      <div class="py-16 flex justify-center">
+        <div class="w-full max-w-4xl h-px bg-gradient-to-r from-transparent via-brand-text/10 to-transparent"></div>
+      </div>
+      
+      <!-- Adventure Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Image Content (Left) -->
+        <div class="relative order-2 lg:order-1">
+          <img 
+            src="/arequipa_aventura.avif" 
+            alt="Adventure in Colca Canyon Arequipa" 
+            loading="lazy"
+            decoding="async"
+            class="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
+          />
+          <div class="absolute -top-6 -right-6 bg-white p-5 shadow-xl rounded-lg hidden md:block border border-gray-100 z-10">
+            <p class="font-cinzel font-bold text-brand-primary uppercase text-xs tracking-widest text-center">
+              Colca<br/>Valley
+            </p>
+          </div>
+          
+          <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-brand-primary/10 rounded-full blur-3xl scale-125"></div>
+        </div>
+        
+        <!-- Text Content (Right) -->
+        <div class="space-y-6 order-1 lg:order-2">
+          <h2 class="font-cinzel text-3xl md:text-4xl text-brand-text font-bold uppercase tracking-wider">
+            Adventure
+          </h2>
+          <div class="w-20 h-1 bg-brand-primary"></div>
+          <p class="text-lg text-brand-text/80 leading-relaxed font-light">
+            If adventure is what you seek, Arequipa is your ultimate destination. Mountain biking trails, kayaking, trekking, mountaineering, and much more await you in one of the deepest valleys in the world, the <strong class="font-semibold text-brand-text">Colca Valley</strong>.
+          </p>
+          <ul class="space-y-3 text-brand-text/80 mt-6 font-light">
+            <li class="flex items-start">
+              <span class="text-brand-primary mr-3 text-lg leading-none mt-1">✦</span>
+              <span>Trekking across the Colca Canyon, one of the deepest canyons on the planet.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-brand-primary mr-3 text-lg leading-none mt-1">✦</span>
+              <span>Witnessing the breathtaking and majestic flight of the Andean condor.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-brand-primary mr-3 text-lg leading-none mt-1">✦</span>
+              <span>Mountain biking, mountaineering, and white-water river rafting for bold adventurers.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Divider -->
+      <div class="py-16 flex justify-center">
+        <div class="w-full max-w-4xl h-px bg-gradient-to-r from-transparent via-brand-text/10 to-transparent"></div>
+      </div>
+      
+      <!-- Sanctuaries Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Text Content (Left) -->
+        <div class="space-y-6">
+          <h2 class="font-cinzel text-3xl md:text-4xl text-brand-text font-bold uppercase tracking-wider">
+            Sanctuaries & Heritage
+          </h2>
+          <div class="w-20 h-1 bg-brand-primary"></div>
+          <p class="text-lg text-brand-text/80 leading-relaxed font-light">
+            As ancient as they are mystical, Arequipa's architectural and archaeological sanctuaries invite you to uncover our region's extraordinary historical heritage. You can explore the <strong class="font-semibold text-brand-text">Toro Muerto Petroglyphs</strong>, one of the largest concentrations of rock art in the entire world.
+          </p>
+          <ul class="space-y-3 text-brand-text/80 mt-6 font-light">
+            <li class="flex items-start">
+              <span class="text-brand-primary mr-3 text-lg leading-none mt-1">✦</span>
+              <span>Enigmatic Toro Muerto Petroglyphs featuring thousands of ancient designs carved directly into volcanic rocks.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-brand-primary mr-3 text-lg leading-none mt-1">✦</span>
+              <span>Pre-Inca sanctuaries, temples, and tombs concealed within sheer cliffs and scenic river valleys.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-brand-primary mr-3 text-lg leading-none mt-1">✦</span>
+              <span>A truly mystical connection with the historic indigenous civilizations of southern Peru.</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Image Content (Right) -->
+        <div class="relative">
+          <img 
+            src="/arequipa_santuarios.avif" 
+            alt="Toro Muerto Petroglyphs Arequipa" 
+            loading="lazy"
+            decoding="async"
+            class="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
+          />
+          <div class="absolute -bottom-6 -left-6 bg-white p-5 shadow-xl rounded-lg hidden md:block border border-gray-100 z-10">
+            <p class="font-cinzel font-bold text-brand-primary uppercase text-xs tracking-widest text-center">
+              Toro<br/>Muerto
+            </p>
+          </div>
+          
+          <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-brand-primary/10 rounded-full blur-3xl scale-125"></div>
+        </div>
+      </div>
+      
+      <!-- Divider -->
+      <div class="py-16 flex justify-center">
+        <div class="w-full max-w-4xl h-px bg-gradient-to-r from-transparent via-brand-text/10 to-transparent"></div>
+      </div>
+      
+      <!-- Gastronomy Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Image Content (Left) -->
+        <div class="relative order-2 lg:order-1">
+          <img 
+            src="/arequipa_gastronomia.avif" 
+            alt="Arequipa Gastronomy" 
+            loading="lazy"
+            decoding="async"
+            class="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
+          />
+          <div class="absolute -top-6 -right-6 bg-white p-5 shadow-xl rounded-lg hidden md:block border border-gray-100 z-10">
+            <p class="font-cinzel font-bold text-brand-primary uppercase text-xs tracking-widest text-center">
+              Local<br/>Flavor
+            </p>
+          </div>
+          
+          <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-brand-primary/10 rounded-full blur-3xl scale-125"></div>
+        </div>
+        
+        <!-- Text Content (Right) -->
+        <div class="space-y-6 order-1 lg:order-2">
+          <h2 class="font-cinzel text-3xl md:text-4xl text-brand-text font-bold uppercase tracking-wider">
+            Savor Arequipa
+          </h2>
+          <div class="w-20 h-1 bg-brand-primary"></div>
+          <p class="text-lg text-brand-text/80 leading-relaxed font-light">
+            Arequipa's world-renowned gastronomy is so flavorful, diverse, and extensive that a single visit will not be enough to enjoy all its culinary treasures. Among our highest recommendations: <strong class="font-semibold text-brand-text">Arequipean Adobo, Pastel de Papa with Rocoto Relleno (stuffed pepper), fried guinea pig, and traditional shrimp chowder</strong>.
+          </p>
+          <ul class="space-y-3 text-brand-text/80 mt-6 font-light">
+            <li class="flex items-start">
+              <span class="text-brand-primary mr-3 text-lg leading-none mt-1">✦</span>
+              <span>Visit traditional local Picanterías for an authentic and historic lunch experience.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-brand-primary mr-3 text-lg leading-none mt-1">✦</span>
+              <span>Try the iconic artisanal Queso Helado (ice cream) as a dessert while strolling through town squares.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-brand-primary mr-3 text-lg leading-none mt-1">✦</span>
+              <span>Enjoy authentic craft chicha de guiñapo made from locally grown purple corn.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+  
+  <Footer lang="en" />
+</Layout>

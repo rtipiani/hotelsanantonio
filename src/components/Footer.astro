@@ -14,10 +14,13 @@ const t = {
     contact: "Contacto",
     linksTitle: "Enlaces Rápidos",
     links: [
+      { name: "Inicio", href: "/" },
       { name: "Habitaciones", href: "/habitaciones" },
       { name: "Servicios", href: "/servicios" },
+      { name: "Sala de Reuniones", href: "/sala-de-reuniones" },
       { name: "Galería", href: "/galeria" },
-      { name: "Sobre Nosotros", href: "/#nosotros" }
+      { name: "Contacto", href: "/contacto" },
+      { name: "ESNNA", href: "/esnna" }
     ],
     newsletterTitle: "Boletín",
     newsletterDesc: "Suscríbete para recibir ofertas exclusivas y novedades.",
@@ -25,17 +28,21 @@ const t = {
     send: "Enviar",
     rights: "Todos los derechos reservados.",
     privacy: "Política de Privacidad",
-    terms: "Términos y Condiciones"
+    terms: "Términos y Condiciones",
+    legalNotice: "Aviso Legal"
   },
   en: {
     desc: "Your 3-star urban haven. Where corporate comfort and family warmth meet in Miraflores, Arequipa.",
     contact: "Contact",
     linksTitle: "Quick Links",
     links: [
+      { name: "Home", href: "/en" },
       { name: "Rooms", href: "/en/habitaciones" },
       { name: "Services", href: "/en/servicios" },
+      { name: "Meeting Room", href: "/en/sala-de-reuniones" },
       { name: "Gallery", href: "/en/galeria" },
-      { name: "About Us", href: "/en/#nosotros" }
+      { name: "Contact", href: "/en/contacto" },
+      { name: "ESNNA", href: "/en/esnna" }
     ],
     newsletterTitle: "Newsletter",
     newsletterDesc: "Subscribe to receive exclusive offers and news.",
@@ -43,7 +50,8 @@ const t = {
     send: "Submit",
     rights: "All rights reserved.",
     privacy: "Privacy Policy",
-    terms: "Terms and Conditions"
+    terms: "Terms and Conditions",
+    legalNotice: "Legal Notice"
   }
 }[lang];
 ---
@@ -88,10 +96,10 @@ const t = {
     <div>
       <h3 class="font-bold uppercase tracking-widest text-sm mb-6">{t.contact}</h3>
       <ul class="space-y-4 text-white/80 text-sm">
-        <li>Parque San Antonio 200, Miraflores</li>
-        <li>Arequipa, Perú</li>
-        <li>WA: +51 973 341 847</li>
-        <li>{lang === 'es' ? 'Recepción' : 'Reception'}: (+51) 054 220502</li>
+        <li>Parque San Antonio N.° 200</li>
+        <li>Miraflores, Arequipa – Perú</li>
+        <li>WA: +51 973 341 847 / +51 960 762 350</li>
+        <li>{lang === 'es' ? 'Recepción' : 'Reception'}: (054) 220502</li>
         <li>reservas@hotelplazasanantonio.com.pe</li>
       </ul>
     </div>
@@ -127,8 +135,9 @@ const t = {
   <div class="max-w-7xl mx-auto px-6 md:px-12 mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/70">
     <p>&copy; {new Date().getFullYear()} Hotel San Antonio Arequipa. {t.rights}</p>
     <div class="flex gap-4">
-      <a href="#" class="hover:text-white transition-colors">{t.privacy}</a>
-      <a href="#" class="hover:text-white transition-colors">{t.terms}</a>
+      <a href={lang === 'en' ? "/en/aviso-legal" : "/aviso-legal"} class="hover:text-white transition-colors">{t.legalNotice}</a>
+      <a href={lang === 'en' ? "/en/politica-privacidad" : "/politica-privacidad"} class="hover:text-white transition-colors">{t.privacy}</a>
+      <a href={lang === 'en' ? "/en/terminos-condiciones" : "/terminos-condiciones"} class="hover:text-white transition-colors">{t.terms}</a>
     </div>
   </div>
 </footer>

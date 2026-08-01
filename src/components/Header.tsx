@@ -112,9 +112,9 @@ export default function Header({ lang = 'es' }: HeaderProps) {
           {/* Language Switcher */}
           <div className="flex items-center gap-2 border-l border-gray-200 pl-8 ml-2">
             <Globe className="w-4 h-4 text-brand-text" />
-            <a href={getLocalizedUrl('es')} className="text-[11px] font-extrabold text-brand-primary">ES</a>
+            <a href={getLocalizedUrl('es')} className={clsx("text-[11px] transition-colors", lang === 'es' ? "font-extrabold text-brand-primary" : "font-bold text-brand-text hover:text-brand-primary")}>ES</a>
             <span className="text-[11px] text-gray-300">/</span>
-            <a href={getLocalizedUrl('en')} className="text-[11px] font-bold text-brand-text hover:text-brand-primary transition-colors">EN</a>
+            <a href={getLocalizedUrl('en')} className={clsx("text-[11px] transition-colors", lang === 'en' ? "font-extrabold text-brand-primary" : "font-bold text-brand-text hover:text-brand-primary")}>EN</a>
           </div>
 
           <a 
@@ -173,8 +173,8 @@ export default function Header({ lang = 'es' }: HeaderProps) {
               <hr className="border-gray-100 my-2" />
               <div className="flex items-center gap-4">
                 <Globe className="w-5 h-5 text-brand-text" />
-                <a href={getLocalizedUrl('es')} className="text-sm font-extrabold text-brand-primary">ES</a>
-                <a href={getLocalizedUrl('en')} className="text-sm font-bold text-brand-text hover:text-brand-primary">EN</a>
+                <a href={getLocalizedUrl('es')} className={clsx("text-sm", lang === 'es' ? "font-extrabold text-brand-primary" : "font-bold text-brand-text hover:text-brand-primary")}>ES</a>
+                <a href={getLocalizedUrl('en')} className={clsx("text-sm", lang === 'en' ? "font-extrabold text-brand-primary" : "font-bold text-brand-text hover:text-brand-primary")}>EN</a>
               </div>
               <a 
                 href="https://wa.me/51973341847?text=Hola,%20deseo%20hacer%20una%20reserva." 

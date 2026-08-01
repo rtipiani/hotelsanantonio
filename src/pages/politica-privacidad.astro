@@ -1,0 +1,71 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Política de Privacidad">
+  <Header client:load />
+  
+  <main class="flex-grow bg-brand-bg pt-12 pb-16">
+    <div class="max-w-4xl mx-auto px-6 md:px-12 bg-white p-8 md:p-12 shadow-sm rounded-lg">
+      <h1 class="font-cinzel text-2xl md:text-3xl text-brand-text font-bold mb-8 text-center uppercase tracking-wider">Política de Privacidad</h1>
+      
+      <div class="space-y-6 text-brand-text/80 leading-relaxed text-xs md:text-sm">
+        <section>
+          <p class="mb-3">En Hotel Plaza San Antonio EIRL valoramos su privacidad y nos comprometemos a proteger sus datos personales. Esta Política de Privacidad explica cómo recopilamos, utilizamos y compartimos información sobre usted cuando visita nuestro sitio web https://www.hotelplazasanantonio.com.pe y cuando utiliza nuestros servicios.</p>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">1. Información que recopilamos</h2>
+          <p class="mb-3">Podemos recopilar los siguientes tipos de información:</p>
+          <ul class="list-disc pl-6 mb-3 space-y-2">
+            <li><strong>Información de contacto:</strong> como su nombre, dirección de correo electrónico, número de teléfono y dirección postal.</li>
+            <li><strong>Información de reserva:</strong> detalles sobre sus estancias, fechas de llegada y salida, preferencias de habitación y peticiones especiales.</li>
+            <li><strong>Información de pago:</strong> datos de tarjetas de crédito u otros métodos de pago utilizados para garantizar o pagar sus reservas.</li>
+            <li><strong>Información técnica:</strong> dirección IP, tipo de navegador, sistema operativo y comportamiento de navegación en nuestro sitio web.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">2. Uso de la información</h2>
+          <p class="mb-3">Utilizamos su información personal para los siguientes fines:</p>
+          <ul class="list-disc pl-6 mb-3 space-y-2">
+            <li>Gestionar y procesar sus reservas de habitaciones y servicios asociados.</li>
+            <li>Comunicarnos con usted respecto a su estancia, incluyendo confirmaciones y avisos importantes.</li>
+            <li>Responder a sus consultas, solicitudes o comentarios.</li>
+            <li>Mejorar nuestros servicios y personalizar su experiencia en el hotel.</li>
+            <li>Enviar comunicaciones promocionales o boletines informativos (solo si ha dado su consentimiento previo).</li>
+            <li>Cumplir con nuestras obligaciones legales y normativas.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">3. Compartir información</h2>
+          <p class="mb-3">No vendemos, alquilamos ni compartimos su información personal con terceros para fines comerciales, excepto en los siguientes casos:</p>
+          <ul class="list-disc pl-6 mb-3 space-y-2">
+            <li><strong>Proveedores de servicios:</strong> Compartimos información con empresas que nos prestan servicios, como el motor de reservas o plataformas de pago (por ejemplo, Sleep and Go S.L), siempre bajo estrictos acuerdos de confidencialidad.</li>
+            <li><strong>Requisitos legales:</strong> Podemos revelar su información si la ley lo requiere o si creemos de buena fe que dicha acción es necesaria para cumplir con un procedimiento legal, orden judicial o proteger nuestros derechos.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">4. Seguridad de los datos</h2>
+          <p class="mb-3">Implementamos medidas de seguridad técnicas y organizativas adecuadas para proteger sus datos personales contra el acceso no autorizado, la alteración, divulgación o destrucción. Sin embargo, ningún método de transmisión por Internet o almacenamiento electrónico es 100% seguro.</p>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">5. Sus derechos</h2>
+          <p class="mb-3">Usted tiene derecho a acceder, rectificar, cancelar u oponerse al tratamiento de sus datos personales. Para ejercer estos derechos, puede ponerse en contacto con nosotros enviando un correo electrónico a <strong>hplazasanantonio@gmail.com</strong> o llamando al <strong>054-220502</strong>, adjuntando una copia de su documento de identidad.</p>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">6. Cambios en esta política</h2>
+          <p class="mb-3">Nos reservamos el derecho a actualizar esta Política de Privacidad en cualquier momento. Cualquier cambio será publicado en esta página con la fecha de revisión actualizada.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>

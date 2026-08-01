@@ -8,11 +8,54 @@ import Footer from '../../components/Footer.astro';
   <Header lang="en" client:load />
   <main class="min-h-screen bg-white py-24">
     <div class="max-w-7xl mx-auto px-6 md:px-12 text-center">
-      <span className="text-brand-primary font-bold uppercase tracking-widest text-sm mb-2 block">Events and Business</span>
-      <h2 className="text-4xl md:text-5xl font-serif text-brand-text mb-6">Meeting Room</h2>
-      <p className="text-brand-text-muted max-w-3xl mx-auto text-lg leading-relaxed">
-        Coming soon: A space designed and equipped to make your business meetings, workshops, and presentations a complete success.
+      <span class="text-brand-primary font-bold uppercase tracking-widest text-sm mb-2 block">Events and Business</span>
+      <h2 class="text-4xl md:text-5xl font-serif text-brand-text mb-6">Meeting Room</h2>
+      <p class="text-brand-text-muted max-w-3xl mx-auto text-lg leading-relaxed mb-16">
+        A space designed and equipped to make your business meetings, workshops, and presentations a complete success. We have state-of-the-art audiovisual technology, corporate furniture, and high-speed internet in a comfortable and private environment.
       </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-12">
+        <div class="overflow-hidden h-64 md:h-80 relative group">
+          <div class="absolute inset-0 bg-brand-text/10 group-hover:bg-transparent transition-colors z-10"></div>
+          <img 
+            src="/sala_reuniones/sala_reuniones1.avif" 
+            alt="Meeting Room" 
+            loading="lazy"
+            decoding="async"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+        </div>
+        <div class="overflow-hidden h-64 md:h-80 relative group">
+          <div class="absolute inset-0 bg-brand-text/10 group-hover:bg-transparent transition-colors z-10"></div>
+          <img 
+            src="/sala_reuniones/sala_reuniones2.avif" 
+            alt="Corporate table" 
+            loading="lazy"
+            decoding="async"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+        </div>
+        <div class="overflow-hidden h-64 md:h-80 relative group">
+          <div class="absolute inset-0 bg-brand-text/10 group-hover:bg-transparent transition-colors z-10"></div>
+          <img 
+            src="/sala_reuniones/sala_reuniones3.avif" 
+            alt="Meeting room facilities" 
+            loading="lazy"
+            decoding="async"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+        </div>
+        <div class="overflow-hidden h-64 md:h-80 relative group">
+          <div class="absolute inset-0 bg-brand-text/10 group-hover:bg-transparent transition-colors z-10"></div>
+          <img 
+            src="/sala_reuniones/sala_reuniones4.avif" 
+            alt="Meeting room equipment" 
+            loading="lazy"
+            decoding="async"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+        </div>
+      </div>
     </div>
   </main>
   <Footer lang="en" />

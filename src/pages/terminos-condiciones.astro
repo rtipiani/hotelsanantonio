@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Términos y Condiciones">
+  <Header client:load />
+  
+  <main class="flex-grow bg-brand-bg pt-12 pb-16">
+    <div class="max-w-4xl mx-auto px-6 md:px-12 bg-white p-8 md:p-12 shadow-sm rounded-lg">
+      <h1 class="font-cinzel text-2xl md:text-3xl text-brand-text font-bold mb-8 text-center uppercase tracking-wider">Términos y Condiciones</h1>
+      
+      <div class="space-y-6 text-brand-text/80 leading-relaxed text-xs md:text-sm">
+        <section>
+          <p class="mb-3">Bienvenido a Hotel Plaza San Antonio. Los siguientes términos y condiciones regulan el uso de nuestro sitio web y los servicios de alojamiento. Al realizar una reserva o utilizar nuestro sitio, usted acepta estos términos en su totalidad.</p>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">1. Reservas y Pagos</h2>
+          <ul class="list-disc pl-6 mb-3 space-y-2">
+            <li>Todas las reservas están sujetas a disponibilidad y confirmación por parte del hotel.</li>
+            <li>Para garantizar una reserva, puede ser necesario proporcionar los datos de una tarjeta de crédito válida o realizar un depósito previo, según la tarifa seleccionada.</li>
+            <li>Los precios indicados en el sitio web incluyen los impuestos aplicables, a menos que se especifique lo contrario (los huéspedes extranjeros no domiciliados en Perú pueden estar exentos del IGV bajo ciertas condiciones, presentando su pasaporte y Tarjeta Andina de Migración).</li>
+            <li>El pago total de la estancia (o el saldo restante) deberá abonarse en el momento del check-in o check-out, según la política del hotel.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">2. Políticas de Check-in y Check-out</h2>
+          <ul class="list-disc pl-6 mb-3 space-y-2">
+            <li><strong>Check-in (Entrada):</strong> A partir de las 13:00 horas (sujeto a cambios, por favor confirme con recepción).</li>
+            <li><strong>Check-out (Salida):</strong> Hasta las 12:00 horas.</li>
+            <li>Cualquier solicitud de entrada anticipada (early check-in) o salida tardía (late check-out) está sujeta a disponibilidad y puede conllevar cargos adicionales.</li>
+            <li>Al momento del check-in, todos los huéspedes deben presentar un documento de identidad oficial válido (DNI, pasaporte o carnet de extranjería).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">3. Políticas de Cancelación y Modificación</h2>
+          <ul class="list-disc pl-6 mb-3 space-y-2">
+            <li>Las políticas de cancelación varían según el tipo de tarifa reservada. Por favor, revise cuidadosamente las condiciones específicas de su reserva.</li>
+            <li>En caso de tarifas estándar, las cancelaciones deben realizarse con la antelación indicada en su confirmación para evitar cargos (generalmente equivalente a la primera noche).</li>
+            <li>En caso de "No Show" (no presentarse el día de la reserva sin aviso previo), el hotel cobrará el monto correspondiente a la primera noche o la totalidad de la estancia, según la tarifa aplicable.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">4. Normas del Hotel</h2>
+          <ul class="list-disc pl-6 mb-3 space-y-2">
+            <li><strong>Fumar:</strong> Está estrictamente prohibido fumar en las habitaciones y en todas las áreas públicas cerradas del hotel. Se aplicará una penalización por limpieza especial si se incumple esta norma.</li>
+            <li><strong>Mascotas:</strong> Por favor, consulte con anticipación nuestra política de mascotas, ya que pueden no estar permitidas o estar sujetas a condiciones y cargos extra.</li>
+            <li><strong>Daños:</strong> El huésped es responsable de cualquier daño causado a las instalaciones, mobiliario o equipos del hotel durante su estancia, y el hotel se reserva el derecho de cobrar por las reparaciones o reemplazos necesarios.</li>
+            <li><strong>Comportamiento:</strong> Se espera que los huéspedes mantengan un comportamiento respetuoso hacia el personal y otros huéspedes. El hotel se reserva el derecho de admisión y permanencia.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">5. Responsabilidad</h2>
+          <p class="mb-3">El hotel no se hace responsable por la pérdida, robo o daño de objetos de valor, dinero o documentos dejados en las habitaciones. Recomendamos utilizar las cajas de seguridad disponibles.</p>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">6. Modificaciones</h2>
+          <p class="mb-3">Hotel Plaza San Antonio se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones entrarán en vigencia inmediatamente después de su publicación en el sitio web.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>

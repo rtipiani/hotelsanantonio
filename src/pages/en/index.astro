@@ -2,7 +2,11 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header';
 import HeroSlider from '../../components/HeroSlider';
+import Welcome from '../../components/Welcome';
 import Features from '../../components/Features';
+import Location from '../../components/Location';
+import WhatToSee from '../../components/WhatToSee';
+import WebBenefits from '../../components/WebBenefits';
 import RoomsPreview from '../../components/RoomsPreview';
 import Footer from '../../components/Footer.astro';
 ---
@@ -11,7 +15,11 @@ import Footer from '../../components/Footer.astro';
   <Header lang="en" client:load />
   <main>
     <HeroSlider lang="en" client:load />
+    <WebBenefits lang="en" client:visible />
+    <Welcome lang="en" />
     <Features lang="en" client:visible />
+    <Location lang="en" />
+    <WhatToSee lang="en" client:visible />
     <RoomsPreview lang="en" client:visible />
   </main>
   <Footer lang="en" />

@@ -1,0 +1,30 @@
+---
+export const prerender = false;
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import { Percent, Plus } from 'lucide-react';
+
+const cookieValue = Astro.cookies.get('admin_token')?.value;
+if (cookieValue !== (import.meta.env.ADMIN_PASSWORD || 'admin123')) return Astro.redirect('/admin/login');
+---
+<AdminLayout title="Promociones">
+  <div class="flex justify-between items-center mb-8">
+    <div>
+      <h2 class="text-2xl font-bold font-sans text-gray-900 dark:text-white mb-1">Ofertas y Promociones</h2>
+      <p class="text-gray-500 dark:text-zinc-400 text-sm">Crea códigos de descuento y campañas especiales.</p>
+    </div>
+    <button class="flex items-center gap-2 px-4 py-2 bg-brand-primary text-white rounded-lg text-sm font-medium hover:bg-brand-primary-dark transition-colors shadow-sm">
+      <Plus size={16} /> Nueva Promoción
+    </button>
+  </div>
+
+  <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-100 dark:border-zinc-800 shadow-sm p-12 text-center">
+    <div class="w-16 h-16 bg-purple-50 text-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+      <Percent size={32} />
+    </div>
+    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">No hay promociones activas</h3>
+    <p class="text-gray-500 dark:text-zinc-400 max-w-md mx-auto mb-6">
+      Podrás configurar banners promocionales o códigos de descuento que se mostrarán dinámicamente en el sitio web de tu hotel.
+    </p>
+  </div>
+</AdminLayout>
+

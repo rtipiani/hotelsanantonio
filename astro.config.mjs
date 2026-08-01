@@ -15,6 +15,7 @@ export default defineConfig({
       prefixDefaultLocale: false
     }
   },
+  output: 'static',
 
   integrations: [react()],
 

@@ -1,7 +1,40 @@
 ---
+export const prerender = false;
+import { kv as _kv } from '@vercel/kv';
+const kv = _kv as unknown as { get: <T>(key: string) => Promise<T | null> };
 import AdminLayout from '../../layouts/AdminLayout.astro';
 import { DashboardCard } from '../../components/admin/DashboardCard.tsx';
-import { CalendarCheck, Users, Banknote, BedDouble } from 'lucide-react';
+import { CalendarCheck, Users, Banknote, BedDouble, MessageCircle } from 'lucide-react';
+
+const cookieValue = Astro.cookies.get('admin_token')?.value;
+const ADMIN_PASSWORD = import.meta.env.ADMIN_PASSWORD || 'admin123';
+
+if (cookieValue !== ADMIN_PASSWORD) {
+  return Astro.redirect('/admin/login');
+}
+
+let globalTotal = 0;
+const rooms = [];
+
+try {
+  if (import.meta.env.KV_REST_API_URL && import.meta.env.KV_REST_API_TOKEN) {
+    globalTotal = (await kv.get<number>('clicks:total')) || 0;
+    for (let i = 1; i <= 11; i++) {
+      const name = (await kv.get<string>(`room:${i}:name`)) || `Habitación ${i}`;
+      const total = (await kv.get<number>(`clicks:room:${i}:total`)) || 0;
+      if (total > 0 || name !== `Habitación ${i}`) {
+        rooms.push({ id: i, name, total });
+      }
+    }
+  } else {
+    globalTotal = 15;
+    rooms.push({ id: 1, name: 'Habitación Individual Básica (Demo)', total: 5 });
+    rooms.push({ id: 2, name: 'Habitación Queen Ejecutiva (Demo)', total: 10 });
+  }
+} catch (error) {
+  console.error("Error fetching analytics:", error);
+}
+rooms.sort((a, b) => b.total - a.total);
 ---
 
 <AdminLayout title="Dashboard">
@@ -11,7 +44,7 @@ import { CalendarCheck, Users, Banknote, BedDouble } from 'lucide-react';
     <p class="text-gray-500 dark:text-zinc-400 text-sm">Aquí tienes un resumen de la actividad del Hotel San Antonio el día de hoy.</p>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
     <DashboardCard 
       client:load
       title="Reservas Activas" 
@@ -47,6 +80,15 @@ import { CalendarCheck, Users, Banknote, BedDouble } from 'lucide-react';
       trend="down"
       trendValue="-2%"
       delay={0.4}
+    />
+    <DashboardCard 
+      client:load
+      title="Clics WhatsApp" 
+      value={globalTotal.toString()} 
+      icon={MessageCircle} 
+      trend="up"
+      trendValue="+15%"
+      delay={0.5}
     />
   </div>
 

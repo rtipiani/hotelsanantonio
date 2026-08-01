@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Aviso Legal">
+  <Header client:load />
+  
+  <main class="flex-grow bg-brand-bg pt-12 pb-16">
+    <div class="max-w-4xl mx-auto px-6 md:px-12 bg-white p-8 md:p-12 shadow-sm rounded-lg">
+      <h1 class="font-cinzel text-2xl md:text-3xl text-brand-text font-bold mb-8 text-center uppercase tracking-wider">Aviso Legal</h1>
+      
+      <div class="space-y-6 text-brand-text/80 leading-relaxed text-xs md:text-sm">
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">1.- INFORMACIÓN GENERAL.</h2>
+          <p class="mb-3">El presente aviso legal recoge las condiciones generales que rigen el acceso y el uso del sitio Web https://www.hotelplazasanantonio.com.pe en adelante “el sitio Web”.</p>
+          <p class="mb-3">La utilización del sitio Web atribuye a quien lo realice, la condición de usuario del mismo (en adelante, el "Usuario") e implica la aceptación de todas las condiciones incluidas en este Aviso Legal, así como de la política de privacidad.</p>
+          <p class="mb-3">El sitio Web es de titularidad de Hotel Plaza San Antonio EIRL. De conformidad con lo previsto en la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, se hace constar que Hotel Plaza San Antonio EIRL, CIF 20455826471, tiene su sede social en Plaza San Antonio, San Antonio N°200 y que está inscrita en el Registro Mercantil.</p>
+          <p>La dirección de correo electrónico en la que puede contactar con Hotel Plaza San Antonio EIRL es hplazasanantonio@gmail.com. También puede contactar con Hotel Plaza San Antonio EIRL en el teléfono 054-220502.</p>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">2.- TÉRMINOS DE USO.</h2>
+          <p class="mb-3">Sleep and Go S.L, CIF: B-84425636, (en adelante “el proveedor web”, o “S&G”) es una empresa proveedora de servicios tecnológicos a empresas hoteleras. Entre otros servicios, el proveedor web realiza el diseño y puesta en marcha de sitios web así como la posible integración en esos sitios Web de una plataforma a través de la cual el establecimiento hotelero puede ofertar sus alojamientos y los usuarios del sitio web pueden realizar reservas online. Al llevar a cabo una reserva mediante este sitio web el usuario entra en una relación contractual directa con el establecimiento hotelero que haya reservado, no existiendo relación contractual entre el usuario y el proveedor web de ningún tipo en ningún momento.</p>
+          <p class="mb-3">S&G únicamente actuará como intermediario entre el establecimiento hotelero y el usuario, trasmitiendo los datos de la reserva al establecimiento hotelero y enviando al usuario un correo electrónico de confirmación en representación del establecimiento reservado, cumpliendo en ese proceso de intercambio de información la legislación vigente en materia de seguridad y protección de datos y su política de privacidad.</p>
+          <p class="mb-3">De igual manera, el cliente consiente, a través de la aceptación de la reserva, para el tratamiento de los datos de su tarjeta de crédito con la finalidad de formalizar su reserva, así como el mantenimiento de los mismos como depósito y seguridad por daños y gastos extras.</p>
+          <p class="mb-3">El usuario declara que es mayor de edad y que tiene la capacidad legal suficiente para adquirir los servicios ofrecidos a través del sitio Web.</p>
+          <p class="mb-3">La utilización del sitio Web por parte del usuario implica la aceptación expresa y la adhesión plena y sin reservas a todos y cada uno de estos Términos de uso:</p>
+          <ul class="list-disc pl-6 mb-3 space-y-2">
+            <li>No está permitida la modificación del sitio Web ni de sus contenidos. La utilización indebida o no autorizada, así como los daños o perjuicios que se puedan ocasionar como consecuencia del incumplimiento de dicha obligación, dará lugar a las acciones que legalmente correspondan y, en su caso, a las responsabilidades que de dicho ejercicio se deriven.</li>
+            <li>Tanto el acceso al sitio Web, como el uso que pueda hacerse de la información contenida en el mismo son de la exclusiva responsabilidad de quien lo realiza.</li>
+            <li>Está prohibido el envío de correo masivo no solicitado o correo no solicitado (SPAM) dirigido a cuentas de correo electrónico utilizadas en esta web.</li>
+            <li>Está prohibido utilizar este sitio web con fines comerciales o de manera inadecuada atendiendo a su propia finalidad.</li>
+            <li>El usuario no podrá copiar, reproducir, transmitir o distribuir de ninguna manera el contenido del sitio Web o de los servicios que pueden obtenerse a través del mismo. El usuario se compromete a no llevar a cabo un uso negligente, fraudulento o ilícito del sitio Web, así como a no dañar la imagen o derechos de Hotel Plaza San Antonio EIRL.</li>
+            <li>El usuario se abstendrá de obstaculizar el funcionamiento del sitio Web, suplantar a otros usuarios o personas, comprobar vulnerabilidades y, en general, de cualquier uso que sea contrario a la explotación normal del sitio Web.</li>
+            <li>El usuario no podrá acceder al sitio web de modo que dañe, deteriore, inutilice o sobrecargue los servicios y/o información ofrecida.</li>
+          </ul>
+          <p class="mb-3">El usuario acepta que Hotel Plaza San Antonio EIRL pueda cancelar su acceso, cuenta o uso del sitio Web, si Hotel Plaza San Antonio EIRL considera que ha actuado en contra de lo dispuesto en estos Términos de uso.</p>
+          <p>Los presentes Términos de uso estarán sometidos a la legislación española, y la contratación con el usuario se realiza en lengua española o en otras que estén disponibles y hayan sido seleccionadas por el usuario.</p>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">3.- CONTENIDO DEL USUARIO</h2>
+          <p class="mb-3">El sitio Web permite que el usuario incluya comentarios o valoraciones de establecimientos hoteleros y otros contenidos. Dichos comentarios o valoraciones serán publicados en el sitio Web por lo que cualquier persona que visite el mismo tendrá acceso a los mismos.</p>
+          <p class="mb-3">El usuario es el único responsable del contenido que publique en el sitio Web, y se compromete a que tal contenido no vulnere derechos de terceros, no sea contrario a la ley, la moral y el orden público, así como que no incluya contenido publicitario de ningún tipo.</p>
+          <p class="mb-3">Hotel Plaza San Antonio EIRL no edita, selecciona, controla, garantiza o aprueba el contenido del usuario. En caso de que el usuario considere que algún contenido vulnera sus derechos, le rogamos que se ponga en contacto con Hotel Plaza San Antonio EIRL. No obstante lo anterior, Hotel Plaza San Antonio EIRL se reserva el derecho de modificar o eliminar, total o parcialmente, en cualquier momento, y a su sola discreción, cualquier contenido del usuario.</p>
+          <p class="mb-3">Es responsabilidad del usuario mantener la confidencialidad de sus contraseñas, así como asegurar la veracidad de los datos personales suministrados.</p>
+          <p>Es responsabilidad del Hotel Plaza San Antonio EIRL el tratamiento de los datos y el uso posterior de los mismos con los fines autorizados conforme a la ley de protección de datos y la legislación aplicable en este punto. S&G como mero proveedor web declina toda responsabilidad en el tratamiento que el alojamiento realice sobre los datos que obren en su poder como consecuencia de las reservas realizadas a través del sitio web.</p>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">4.- LIMITACIÓN DE RESPONSABILIDAD</h2>
+          <p class="mb-3">El presente sitio Web tiene por objeto poner a disposición de los usuarios toda clase de servicios e informaciones relacionadas con Hotel Plaza San Antonio EIRL así como información relativa a los alojamientos ofertados por los establecimientos hoteleros. Se persigue el objetivo de velar por la actualidad y exactitud de dicha información, no obstante Sleep and Go, SL no asume responsabilidad alguna en relación con la información incluida en estas páginas.</p>
+          <p class="mb-3">En este sentido, la información mostrada es proporcionada por los establecimientos hoteleros, los cuales tienen acceso a una extranet a través de la cual se hacen totalmente responsables de actualizar las tarifas, la disponibilidad y los otros datos que aparecen en el sitio Web. Sleep and Go SL, aunque intenta que el servicio sea lo más preciso posible, no puede verificar ni garantizar que toda la información sea exacta, completa o correcta. Tampoco se hace responsable de errores (manifiestos y tipográficos), interrupciones (debido a caídas temporales y/o parciales del servidor o a reparaciones, actualizaciones y mantenimiento del sitio Web u otros motivos), información imprecisa, engañosa o falsa, o falta de información. El establecimiento hotelero es responsable en todo momento de la precisión, la exactitud y la corrección de la información (tanto descriptiva como referente a tarifas y disponibilidad) que aparece en este sitio Web.</p>
+          <p class="mb-3">Tanto el acceso al sitio Web, como el uso que pueda hacerse de la información contenida en el mismo son de la exclusiva responsabilidad de quien lo realiza. Tanto Sleep and Go, SL como Hotel Plaza San Antonio EIRL no responderán de ninguna consecuencia, daño o perjuicio que pudieran derivarse de dicho acceso o uso de información, con excepción de todas aquellas actuaciones que resulten de las disposiciones legales aplicables.</p>
+          <p class="mb-3">Dentro del sitio Web puede haber enlaces a otras webs sobre los cuales Hotel Plaza San Antonio EIRL no tiene control y de las que, por tanto, Hotel Plaza San Antonio EIRL no se hace responsable.</p>
+          <p>Sleep and Go SL no puede garantizar plenamente el funcionamiento de la red de comunicaciones y, por tanto, no asume responsabilidad alguna sobre la disponibilidad de su servidor. El servidor podrá ser desconectado sin previo aviso. Se harán todos los esfuerzos para que el impacto por tareas de mantenimiento sea el mínimo posible. Asimismo, no se responsabiliza de ningún daño o perjuicio sufrido por el usuario que se derive del acceso a este servidor o del uso de información o aplicaciones en él contenidos.</p>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">5.- PROPIEDAD INTELECTUAL E INDUSTRIAL.</h2>
+          <p class="mb-3">Los derechos de propiedad intelectual de este sitio Web, su diseño gráfico y los códigos que contiene, son titularidad de S&G., a no ser que se indique una titularidad diferente. La reproducción, distribución, comercialización o transformación no autorizadas de estas obras constituye una infracción de los derechos de propiedad intelectual de S&G. o de aquél que sea su titular.</p>
+          <p class="mb-3">Igualmente, todas las marcas o signos distintivos de cualquier clase contenidos en el sitio Web están protegidos por Ley. La utilización no autorizada de la información contenida en este sitio Web, así como los perjuicios ocasionados en los derechos de propiedad intelectual e industrial de SLEEP AND GO, S.L. pueden dar lugar al ejercicio de las acciones que legalmente correspondan y, si procede, a las responsabilidades que de dicho ejercicio se deriven.</p>
+          <p>El uso del sitio Web, así como la contratación de servicios a través del mismo por parte del usuario, no implica en ningún caso cesión al mismo de derechos por SLEEP AND GO, S.L. en materia de propiedad intelectual o industrial.</p>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">6.- CONDICIONES DE LA PRESTACIÓN DE SERVICIOS</h2>
+          <p class="mb-3">Los precios que se muestran en la web son precios finales, en función del criterio de búsqueda realizado, con impuestos incluidos (salvo que el alojamiento especifque que no están incluidos en sus condiciones).</p>
+          <p class="mb-3">El alojamiento tiene la obligación de mantener actualizada la disponibilidad de las habitaciones y sus precios, no obstante pueden surgir problemas de overbooking o de mantenimiento de tarifas, en estos casos el alojamiento le avisará en tiempo de la situación para cancelar la reserva y hacerle la devolución del importe abonado (si se diera el caso) de manera que pueda encontrar otro alojamiento.</p>
+          <p class="mb-3">Hotel Plaza San Antonio EIRL confirmará mediante el envío de un correo electrónico al usuario la contratación realizada y las condiciones de la misma. Hotel Plaza San Antonio EIRL conservará, para cada contratación, una copia electrónica de las condiciones aplicables a la contratación. No obstante, el usuario deberá conservar su propia copia de las condiciones aplicables a cada contratación.</p>
+          <p class="mb-3">La política de cancelación es editada por el cliente para lo cual se le ha facilitado un acceso web que le permite modificarla y establecer distintas políticas de cancelación en función de los periodos o las condiciones de la reserva.</p>
+          <p>Por favor, siga las instrucciones que se le proporcionan en el e-mail de confirmación en caso de que necesite cancelar su estancia. Le recomendamos que lea detenidamente la política de cancelación del alojamiento. Si cancela su reserva de acuerdo con la política de cancelación del alojamiento no se le cargará ningún importe en su tarjeta. Si cancela más tarde de lo que el alojamiento establece como fecha límite o no avisa de la cancelación de la reserva, el alojamiento podrá cobrarle un importe que en la mayoría de los casos es el equivalente al importe de la primera noche.</p>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-3">7.- MODIFICACIONES</h2>
+          <p class="mb-3">Hotel Plaza San Antonio EIRL no garantiza la inexistencia de errores en el acceso al sitio Web o en su contenido ni que éste se encuentre totalmente actualizado, aunque desarrollará los esfuerzos precisos para evitarlos y, en su caso, subsanarlos o actualizarlos a la mayor brevedad posible.</p>
+          <p>Hotel Plaza San Antonio EIRL se reserva el derecho a realizar cambios en el sitio web sin previo aviso, con el objeto de actualizar, corregir, modificar, añadir o eliminar sus contenidos o su diseño.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Home, BedDouble, CalendarDays, Settings, Users, Percent, LogOut, ChevronLeft, ChevronRight, BarChart3 } from 'lucide-react';
 
-export const Sidebar = () => {
+export const Sidebar = ({ currentPath = '/admin' }: { currentPath?: string }) => {
   const [collapsed, setCollapsed] = useState(false);
 
   const navItems = [
@@ -42,7 +42,7 @@ export const Sidebar = () => {
       <nav className="flex-1 overflow-y-auto py-6 px-4 space-y-1.5">
         {navItems.map((item) => {
           const Icon = item.icon;
-          const isActive = item.href === '/admin'; // En el mundo real se usaría window.location.pathname
+          const isActive = item.href === '/admin' ? currentPath === '/admin' : currentPath.startsWith(item.href);
           return (
             <a 
               key={item.href}

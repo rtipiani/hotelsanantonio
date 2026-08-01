@@ -26,5 +26,19 @@
     "path": "/admin",
     "label": "Reservas",
     "lastClicked": "2026-07-21T21:17:10.223Z"
+  },
+  "/admin::Analíticas": {
+    "clicks": 3,
+    "tag": "a",
+    "path": "/admin",
+    "label": "Analíticas",
+    "lastClicked": "2026-07-24T22:57:26.087Z"
+  },
+  "/admin::Configuración": {
+    "clicks": 1,
+    "tag": "a",
+    "path": "/admin",
+    "label": "Configuración",
+    "lastClicked": "2026-07-24T22:57:29.006Z"
   }
 }

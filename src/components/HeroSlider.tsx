@@ -7,7 +7,7 @@ const slidesData = {
   es: [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=80",
+      image: "/sliders/slide6.avif",
       subtitle: "A 10 min de la Plaza de Armas",
       title: "Tu Refugio Urbano",
       description: "Tranquilidad a pasos del centro. El equilibrio perfecto para tus viajes corporativos o familiares en Miraflores, Arequipa.",
@@ -16,7 +16,7 @@ const slidesData = {
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80",
+      image: "/sliders/slide2.avif",
       subtitle: "Vistas Inolvidables",
       title: "Frente a San Antonio",
       description: "Despierta con vistas panorámicas directas al templo histórico y a las imponentes montañas de Arequipa.",
@@ -25,7 +25,7 @@ const slidesData = {
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1414235077428-338988a2e8c0?auto=format&fit=crop&q=80",
+      image: "/sliders/slide5.avif",
       subtitle: "Infraestructura de Primer Nivel",
       title: "Enfoque Corporativo",
       description: "Sala de reuniones equipada con TV de 80\", conectividad total y tarifas diseñadas a la medida de tu empresa.",
@@ -34,7 +34,7 @@ const slidesData = {
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80",
+      image: "/sliders/slide7.avif",
       subtitle: "Detalles que Enamoran",
       title: "Diseño y Confort",
       description: "Cada rincón de nuestro hotel está pensado para ofrecerte la mejor experiencia y calidez en tu estadía.",
@@ -43,18 +43,36 @@ const slidesData = {
     },
     {
       id: 5,
-      image: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&q=80",
+      image: "/sliders/slide1.avif",
       subtitle: "Descanso Garantizado",
       title: "Confort y Elegancia",
       description: "Habitaciones modernas, amplias y diseñadas para un descanso profundo y reparador.",
       buttonText: "Reservar Ahora",
       buttonLink: "/habitaciones"
+    },
+    {
+      id: 6,
+      image: "/sliders/slide3.avif",
+      subtitle: "Experiencia Única",
+      title: "Momentos Especiales",
+      description: "Disfruta de espacios diseñados para crear recuerdos inolvidables con nosotros en cada visita.",
+      buttonText: "Descubrir Más",
+      buttonLink: "/galeria"
+    },
+    {
+      id: 7,
+      image: "/sliders/slide4.avif",
+      subtitle: "Atención Personalizada",
+      title: "Servicio de Primera",
+      description: "Nuestro equipo está siempre dispuesto a hacer de tu estadía una experiencia verdaderamente excepcional.",
+      buttonText: "Contactar",
+      buttonLink: "/#contacto"
     }
   ],
   en: [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=80",
+      image: "/sliders/slide6.avif",
       subtitle: "10 mins from the Main Square",
       title: "Your Urban Haven",
       description: "Tranquility steps away from downtown. The perfect balance for your corporate or family trips in Miraflores, Arequipa.",
@@ -63,7 +81,7 @@ const slidesData = {
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80",
+      image: "/sliders/slide2.avif",
       subtitle: "Unforgettable Views",
       title: "Facing San Antonio",
       description: "Wake up to direct panoramic views of the historic temple and the imposing mountains of Arequipa.",
@@ -72,7 +90,7 @@ const slidesData = {
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1414235077428-338988a2e8c0?auto=format&fit=crop&q=80",
+      image: "/sliders/slide5.avif",
       subtitle: "Top-Tier Infrastructure",
       title: "Corporate Focus",
       description: "Meeting room equipped with an 80\" TV, full connectivity, and rates tailored to your company's needs.",
@@ -81,7 +99,7 @@ const slidesData = {
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80",
+      image: "/sliders/slide7.avif",
       subtitle: "Details to Fall in Love With",
       title: "Design and Comfort",
       description: "Every corner of our hotel is designed to offer you the best experience and warmth during your stay.",
@@ -90,12 +108,30 @@ const slidesData = {
     },
     {
       id: 5,
-      image: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&q=80",
+      image: "/sliders/slide3.avif",
       subtitle: "Guaranteed Rest",
       title: "Comfort and Elegance",
       description: "Modern, spacious rooms designed for a deep and restful sleep.",
       buttonText: "Book Now",
       buttonLink: "/en/habitaciones"
+    },
+    {
+      id: 6,
+      image: "/sliders/slide1.avif",
+      subtitle: "Unique Experience",
+      title: "Special Moments",
+      description: "Enjoy spaces designed to create unforgettable memories with us during every single visit.",
+      buttonText: "Discover More",
+      buttonLink: "/en/galeria"
+    },
+    {
+      id: 7,
+      image: "/sliders/slide4.avif",
+      subtitle: "Personalized Care",
+      title: "First-Class Service",
+      description: "Our team is always ready to make your stay a truly exceptional and memorable experience.",
+      buttonText: "Contact Us",
+      buttonLink: "/en/#contacto"
     }
   ]
 };
@@ -139,12 +175,12 @@ export default function HeroSlider({ lang = 'es' }: HeroSliderProps) {
           transition={{ duration: 1.5, ease: "easeInOut" }}
           className="absolute inset-0 z-0"
         >
-          <img 
-            src={slides[current].image} 
-            alt={slides[current].title} 
+          <img
+            src={slides[current].image}
+            alt={slides[current].title}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/60"></div>
         </motion.div>
       </AnimatePresence>
 
@@ -158,22 +194,22 @@ export default function HeroSlider({ lang = 'es' }: HeroSliderProps) {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <p className="text-white/90 tracking-[0.4em] uppercase text-xs font-semibold mb-8">
+            <p className="text-white/90 tracking-[0.4em] uppercase text-xs font-semibold mb-8 drop-shadow-md">
               {slides[current].subtitle}
             </p>
-            
-            <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-serif mb-8 leading-[1.1]">
+
+            <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-serif mb-8 leading-[1.1] drop-shadow-lg">
               {slides[current].title}
             </h1>
-            
-            <p className="text-white/80 text-lg md:text-xl font-light mb-14 max-w-2xl mx-auto leading-relaxed">
+
+            <p className="text-white/90 text-lg md:text-xl font-light mb-14 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
               {slides[current].description}
             </p>
-            
+
             <div>
-              <a 
-                href={slides[current].buttonLink} 
-                className="inline-block bg-brand-primary text-brand-text hover:bg-brand-primary/90 px-10 py-4 uppercase tracking-[0.2em] text-[11px] font-bold transition-all duration-300"
+              <a
+                href={slides[current].buttonLink}
+                className="inline-block bg-brand-primary text-white hover:bg-brand-primary-dark px-10 py-4 uppercase text-sm tracking-widest font-bold transition-all hover:scale-105 shadow-xl shadow-brand-primary/30"
               >
                 {slides[current].buttonText}
               </a>
@@ -184,14 +220,14 @@ export default function HeroSlider({ lang = 'es' }: HeroSliderProps) {
 
       {/* Navigation Controls */}
       <div className="absolute z-20 bottom-12 left-0 right-0 flex justify-center items-center gap-12">
-        <button 
+        <button
           onClick={prevSlide}
           className="text-white/70 hover:text-white transition-colors"
           aria-label={lang === 'es' ? "Anterior" : "Previous"}
         >
           <ChevronLeft className="w-8 h-8" strokeWidth={1.5} />
         </button>
-        
+
         <div className="flex gap-4">
           {slides.map((_, index) => (
             <button
@@ -209,7 +245,7 @@ export default function HeroSlider({ lang = 'es' }: HeroSliderProps) {
           ))}
         </div>
 
-        <button 
+        <button
           onClick={nextSlide}
           className="text-white/70 hover:text-white transition-colors"
           aria-label={lang === 'es' ? "Siguiente" : "Next"}

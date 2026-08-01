@@ -1,0 +1,46 @@
+---
+export const prerender = false;
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import { Settings, Save } from 'lucide-react';
+
+const cookieValue = Astro.cookies.get('admin_token')?.value;
+if (cookieValue !== (import.meta.env.ADMIN_PASSWORD || 'admin123')) return Astro.redirect('/admin/login');
+---
+<AdminLayout title="Configuración">
+  <div class="flex justify-between items-center mb-8">
+    <div>
+      <h2 class="text-2xl font-bold font-sans text-gray-900 dark:text-white mb-1">Ajustes del Hotel</h2>
+      <p class="text-gray-500 dark:text-zinc-400 text-sm">Configura la información general de contacto y preferencias.</p>
+    </div>
+    <button class="flex items-center gap-2 px-4 py-2 bg-brand-primary text-white rounded-lg text-sm font-medium hover:bg-brand-primary-dark transition-colors shadow-sm">
+      <Save size={16} /> Guardar Cambios
+    </button>
+  </div>
+
+  <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-100 dark:border-zinc-800 shadow-sm p-8 max-w-2xl">
+    <div class="flex items-center gap-3 mb-6 border-b border-gray-100 dark:border-zinc-800 pb-4">
+      <Settings size={20} className="text-gray-400" />
+      <h3 class="text-lg font-bold text-gray-900 dark:text-white">Información Principal</h3>
+    </div>
+    
+    <div class="space-y-6">
+      <div>
+        <label class="block text-sm font-medium text-gray-700 dark:text-zinc-300 mb-2">Nombre del Hotel</label>
+        <input type="text" value="Hotel San Antonio" disabled class="w-full border border-gray-200 dark:border-zinc-700 bg-gray-50 dark:bg-zinc-800 rounded-lg px-4 py-2.5 text-gray-500 cursor-not-allowed" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700 dark:text-zinc-300 mb-2">Número de WhatsApp (Recepcionista)</label>
+        <div class="flex">
+          <span class="inline-flex items-center px-4 rounded-l-lg border border-r-0 border-gray-200 dark:border-zinc-700 bg-gray-50 dark:bg-zinc-800 text-gray-500 text-sm">+51</span>
+          <input type="text" value="973341847" disabled class="flex-1 border border-gray-200 dark:border-zinc-700 bg-gray-50 dark:bg-zinc-800 rounded-r-lg px-4 py-2.5 text-gray-500 cursor-not-allowed" />
+        </div>
+        <p class="text-xs text-gray-400 mt-2">Esta información se cargará desde la base de datos en una futura actualización.</p>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700 dark:text-zinc-300 mb-2">Contraseña del Administrador</label>
+        <input type="password" value="********" disabled class="w-full border border-gray-200 dark:border-zinc-700 bg-gray-50 dark:bg-zinc-800 rounded-lg px-4 py-2.5 text-gray-500 cursor-not-allowed" />
+        <p class="text-xs text-gray-400 mt-2">La contraseña actual se gestiona mediante variables de entorno (ADMIN_PASSWORD) en Vercel por seguridad.</p>
+      </div>
+    </div>
+  </div>
+</AdminLayout>

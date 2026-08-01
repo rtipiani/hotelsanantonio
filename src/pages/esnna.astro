@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Prevención ESNNA">
+  <Header client:load />
+  
+  <main class="flex-grow bg-brand-bg pt-12 pb-16">
+    <div class="max-w-4xl mx-auto px-6 md:px-12 bg-white p-8 md:p-12 shadow-sm rounded-lg text-center">
+      
+      <div class="-mb-4 flex justify-center">
+        <img 
+          src="/codigo-esnna.png" 
+          alt="Compromiso contra la ESNNA" 
+          class="max-w-full h-auto mx-auto object-contain max-h-96"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="space-y-6 text-brand-text/80 leading-relaxed text-xs md:text-sm">
+        <p>
+          En <strong>Hotel Plaza San Antonio EIRL</strong>, rechazamos firmemente la Explotación Sexual de Niñas, Niños y Adolescentes (ESNNA) en el turismo y los viajes.
+        </p>
+        <p>
+          En estricto cumplimiento de la Ley N° 28704 y la Ley N° 30802 de la República del Perú, nuestro establecimiento exige la presentación del documento de identidad original de todos los menores de edad y prohíbe terminantemente el ingreso de menores que no se encuentren acompañados por uno o ambos padres. 
+        </p>
+        <p>
+          En caso de estar acompañados por un tutor, se deberá presentar la autorización notarial o judicial correspondiente. Frente a cualquier situación sospechosa, nuestro personal está instruido para dar aviso inmediato a la Policía Nacional del Perú y autoridades competentes.
+        </p>
+      </div>
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>
