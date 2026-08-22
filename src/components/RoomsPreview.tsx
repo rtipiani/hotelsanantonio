@@ -70,7 +70,7 @@ const content = {
       {
         id: 6,
         name: "Habitación Matrimonial Superior",
-        description: "Disfrute de una amplia y confortable habitación con cama Queen, baño privado y balcón, que ofrece una hermosa vista a la Plaza e Iglesia San Antonio y a los imponentes volcanes de Arequipa. Ideal para parejas que buscan tranquilidad, privacidad, comodidad y una estancia inolvidable en un ambiente elegante y acogedor.",
+        description: "Amplia y confortable habitación ubicada en el 4.º piso, con cama Queen, baño privado y pequeño balcón con privilegiada vista a los volcanes y a la Plaza San Antonio. Ideal para huéspedes que buscan mayor confort, tranquilidad y una experiencia de alojamiento superior.",
         image: "/matrimonial_superior/matrimonial_superior1.avif",
         images: [
           "/matrimonial_superior/matrimonial_superior1.avif",
@@ -80,11 +80,11 @@ const content = {
           "/matrimonial_superior/matrimonial_superior5.avif",
           "/matrimonial_superior/matrimonial_superior6.avif"
         ],
-        price: "S/ 115",
+        price: "S/ 120",
         features: [
           "Hasta 2 huéspedes",
           "18 m²",
-          "Smart TV de 43\" con canales por cable",
+          "Smart TV, con canales por cable",
           "WiFi de alta velocidad",
           "Minibar",
           "Amenidades de cortesía",
@@ -92,8 +92,7 @@ const content = {
           "Agua caliente las 24 horas",
           "Escritorio y mesa de trabajo",
           "Clóset",
-          "Enchufes de 220 V junto a la cama",
-          "Desayuno americano incluido"
+          "Desayuno incluido"
         ]
       },
       {
@@ -363,7 +362,7 @@ const content = {
       {
         id: 6,
         name: "Superior Matrimonial Room",
-        description: "Enjoy a spacious and comfortable room featuring a Queen-size bed, private bathroom, and a private balcony that offers beautiful views of San Antonio Square and Arequipa's stunning volcanoes. Ideal for couples seeking tranquility, privacy, comfort, and an unforgettable stay in an elegant and welcoming atmosphere.",
+        description: "Spacious and comfortable room located on the 4th floor, featuring a Queen-size bed, private bathroom, and a small balcony with a privileged view of the volcanoes and San Antonio Square. Ideal for guests seeking greater comfort, tranquility, and a superior lodging experience.",
         image: "/matrimonial_superior/matrimonial_superior1.avif",
         images: [
           "/matrimonial_superior/matrimonial_superior1.avif",
@@ -373,11 +372,11 @@ const content = {
           "/matrimonial_superior/matrimonial_superior5.avif",
           "/matrimonial_superior/matrimonial_superior6.avif"
         ],
-        price: "S/ 115",
+        price: "S/ 120",
         features: [
           "Up to 2 guests",
           "18 m²",
-          "43\" Smart TV with cable channels",
+          "Smart TV with cable channels",
           "High-speed Wi-Fi",
           "Minibar",
           "Complimentary amenities",
@@ -385,8 +384,7 @@ const content = {
           "24-hour hot water",
           "Desk and work table",
           "Closet",
-          "220V bedside power outlets",
-          "American breakfast included"
+          "Breakfast included"
         ]
       },
       {
