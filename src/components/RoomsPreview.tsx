@@ -252,26 +252,25 @@ const content = {
       {
         id: 1,
         name: "Habitación Individual Básica",
-        description: "Acogedora habitación con baño privado, equipada con una cama de 1½ plazas y vista interior. Su diseño compacto y funcional brinda un ambiente acogedor y confortable, ideal para disfrutar de un descanso reparador. Es una excelente opción para viajeros de negocios o turistas que buscan una destacada relación calidad-precio durante su estadía en Arequipa.",
+        description: "Acogedora habitación ubicada en el 4.º piso, con baño privado, cama de 1½ plazas y vista interior. Su diseño compacto y funcional brinda el confort necesario para una estadía agradable, ideal para viajeros de negocios o turismo que buscan una excelente relación calidad-precio.",
         image: "/individual_basica/individual_basica1.avif",
         images: [
           "/individual_basica/individual_basica1.avif",
           "/individual_basica/individual_basica2.avif",
           "/individual_basica/individual_basica3.avif"
         ],
-        price: "S/ 55",
+        price: "S/ 65",
         features: [
           "1 huésped",
           "11 m²",
-          "Smart TV de 32\" con canales por cable",
+          "Smart TV, con canales por cable",
           "WiFi de alta velocidad",
           "Amenidades de cortesía",
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Mesa de trabajo",
           "Clóset",
-          "Enchufes de 220 V junto a la cama",
-          "Desayuno americano incluido"
+          "Desayuno incluido"
         ]
       },
       {
@@ -549,26 +548,25 @@ const content = {
       {
         id: 1,
         name: "Basic Single Room",
-        description: "Cozy room with private bathroom, equipped with a twin-size (1½ plaza) bed and an interior view. Its compact and functional design provides a welcoming and comfortable atmosphere, ideal for enjoying a restful sleep. It is an excellent choice for business travelers or tourists looking for an outstanding quality-price ratio during their stay in Arequipa.",
+        description: "Cozy room located on the 4th floor, with a private bathroom, twin-size (1½ plaza) bed and interior view. Its compact and functional design provides the necessary comfort for a pleasant stay, ideal for business or leisure travelers seeking an excellent quality-price ratio.",
         image: "/individual_basica/individual_basica1.avif",
         images: [
           "/individual_basica/individual_basica1.avif",
           "/individual_basica/individual_basica2.avif",
           "/individual_basica/individual_basica3.avif"
         ],
-        price: "S/ 55",
+        price: "S/ 65",
         features: [
           "1 guest",
           "11 m²",
-          "32\" Smart TV with cable channels",
+          "Smart TV with cable channels",
           "High-speed Wi-Fi",
           "Complimentary amenities",
           "Hairdryer",
           "24-hour hot water",
           "Work table",
           "Closet",
-          "220V bedside power outlets",
-          "American breakfast included"
+          "Breakfast included"
         ]
       },
       {
