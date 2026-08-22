@@ -122,7 +122,7 @@ const content = {
       {
         id: 7,
         name: "Habitación Doble Superior",
-        description: "Amplia y confortable habitación con baño privado, equipada con una cama matrimonial y una cama de 1½ plazas. Ideal para familias, amigos o compañeros de trabajo que buscan comodidad, amplitud y un ambiente acogedor para disfrutar de una estancia placentera en Arequipa.",
+        description: "Amplia y confortable habitación con baño privado, equipada con una cama matrimonial y una cama de 1½ plazas. Ideal para familias, viajeros o compañeros de trabajo. Puede alojar hasta 2 adultos y 1 niño menor de 5 años utilizando las camas existentes.",
         image: "/doble_superior/doble_superior1.avif",
         images: [
           "/doble_superior/doble_superior1.avif",
@@ -135,15 +135,14 @@ const content = {
         features: [
           "Hasta 2 huéspedes + 1 niño menor de 5 años",
           "24 m²",
-          "Smart TV de 32\" con canales por cable",
+          "Smart TV, con canales por cable",
           "WiFi de alta velocidad",
           "Amenidades de cortesía",
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Mesa de trabajo",
           "Clóset",
-          "Enchufes de 220 V junto a la cama",
-          "Desayuno americano incluido"
+          "Desayuno incluido"
         ]
       },
       {
@@ -414,7 +413,7 @@ const content = {
       {
         id: 7,
         name: "Superior Twin Room",
-        description: "Spacious and comfortable room with a private bathroom, equipped with one double matrimonial bed and one twin-size (1½ plaza) bed. Ideal for families, friends, or coworkers seeking comfort, spaciousness, and a welcoming ambiance for an enjoyable stay in Arequipa.",
+        description: "Spacious and comfortable room with a private bathroom, equipped with one double matrimonial bed and one twin-size (1½ plaza) bed. Ideal for families, travelers or coworkers. It can accommodate up to 2 adults and 1 child under 5 years old using existing beds.",
         image: "/doble_superior/doble_superior1.avif",
         images: [
           "/doble_superior/doble_superior1.avif",
@@ -427,15 +426,14 @@ const content = {
         features: [
           "Up to 2 guests + 1 child under 5",
           "24 m²",
-          "32\" Smart TV with cable channels",
+          "Smart TV with cable channels",
           "High-speed Wi-Fi",
           "Complimentary amenities",
           "Hairdryer",
           "24-hour hot water",
           "Work table",
           "Closet",
-          "220V bedside power outlets",
-          "American breakfast included"
+          "Breakfast included"
         ]
       },
       {
