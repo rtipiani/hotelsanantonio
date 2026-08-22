@@ -31,6 +31,7 @@ const content = {
         ],
         price: "S/ 110",
         features: [
+          "Desayuno incluido",
           "Hasta 2 huéspedes",
           "18 m²",
           "Smart TV, con canales por cable",
@@ -39,8 +40,7 @@ const content = {
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Mesa de trabajo",
-          "Clóset",
-          "Desayuno incluido"
+          "Clóset"
         ]
       },
       {
@@ -58,6 +58,7 @@ const content = {
         ],
         price: "S/ 130",
         features: [
+          "Desayuno incluido",
           "Hasta 2 huéspedes",
           "21 m²",
           "Smart TV, con canales por cable",
@@ -67,8 +68,7 @@ const content = {
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Escritorio y mesa de trabajo",
-          "Clóset",
-          "Desayuno incluido"
+          "Clóset"
         ]
       },
       {
@@ -86,6 +86,7 @@ const content = {
         ],
         price: "S/ 120",
         features: [
+          "Desayuno incluido",
           "Hasta 2 huéspedes",
           "18 m²",
           "Smart TV, con canales por cable",
@@ -95,8 +96,7 @@ const content = {
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Escritorio y mesa de trabajo",
-          "Clóset",
-          "Desayuno incluido"
+          "Clóset"
         ]
       },
       {
@@ -111,6 +111,7 @@ const content = {
         ],
         price: "S/ 80",
         features: [
+          "Desayuno incluido",
           "1 huésped",
           "16 m²",
           "Smart TV, con canales por cable",
@@ -119,8 +120,7 @@ const content = {
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Escritorio y mesa de trabajo",
-          "Clóset",
-          "Desayuno incluido"
+          "Clóset"
         ]
       },
       {
@@ -137,6 +137,7 @@ const content = {
         ],
         price: "S/ 120",
         features: [
+          "Desayuno incluido",
           "Hasta 2 huéspedes + 1 niño menor de 5 años",
           "24 m²",
           "Smart TV, con canales por cable",
@@ -145,8 +146,7 @@ const content = {
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Mesa de trabajo",
-          "Clóset",
-          "Desayuno incluido"
+          "Clóset"
         ]
       },
       {
@@ -162,6 +162,7 @@ const content = {
         ],
         price: "S/ 130",
         features: [
+          "Desayuno incluido",
           "Hasta 3 huéspedes",
           "24 m²",
           "Smart TV, con canales por cable",
@@ -170,8 +171,7 @@ const content = {
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Mesa de trabajo",
-          "Clóset",
-          "Desayuno incluido"
+          "Clóset"
         ]
       },
       {
@@ -184,6 +184,7 @@ const content = {
         ],
         price: "S/ 120",
         features: [
+          "Desayuno incluido",
           "Hasta 3 huéspedes",
           "21 m²",
           "Smart TV, con canales por cable",
@@ -192,8 +193,7 @@ const content = {
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Mesa de trabajo",
-          "Clóset",
-          "Desayuno incluido"
+          "Clóset"
         ]
       },
       {
@@ -207,6 +207,7 @@ const content = {
         ],
         price: "S/ 130",
         features: [
+          "Desayuno incluido",
           "Hasta 3 huéspedes",
           "25 m²",
           "Smart TV, con canales por cable",
@@ -215,8 +216,7 @@ const content = {
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Mesa de trabajo",
-          "Clóset",
-          "Desayuno incluido"
+          "Clóset"
         ]
       },
       {
@@ -231,6 +231,7 @@ const content = {
         ],
         price: "S/ 160",
         features: [
+          "Desayuno incluido",
           "Hasta 4 huéspedes",
           "29 m²",
           "Smart TV, con canales por cable",
@@ -240,8 +241,7 @@ const content = {
           "Calefacción",
           "Agua caliente las 24 horas",
           "Mesa de trabajo",
-          "Clóset",
-          "Desayuno incluido"
+          "Clóset"
         ]
       },
       {
@@ -256,6 +256,7 @@ const content = {
         ],
         price: "S/ 65",
         features: [
+          "Desayuno incluido",
           "1 huésped",
           "11 m²",
           "Smart TV, con canales por cable",
@@ -264,8 +265,7 @@ const content = {
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Mesa de trabajo",
-          "Clóset",
-          "Desayuno incluido"
+          "Clóset"
         ]
       },
       {
@@ -280,6 +280,7 @@ const content = {
         ],
         price: "S/ 88",
         features: [
+          "Desayuno americano incluido",
           "Hasta 2 huéspedes",
           "16 m²",
           "Smart TV de 32\" con canales por cable",
@@ -289,8 +290,7 @@ const content = {
           "Agua caliente las 24 horas",
           "Mesa de trabajo",
           "Clóset",
-          "Enchufes de 220 V junto a la cama",
-          "Desayuno americano incluido"
+          "Enchufes de 220 V junto a la cama"
         ]
       }
     ]
@@ -322,6 +322,7 @@ const content = {
         ],
         price: "S/ 110",
         features: [
+          "Breakfast included",
           "Up to 2 guests",
           "18 m²",
           "Smart TV with cable channels",
@@ -330,8 +331,7 @@ const content = {
           "Hairdryer",
           "24-hour hot water",
           "Work table",
-          "Closet",
-          "Breakfast included"
+          "Closet"
         ]
       },
       {
@@ -349,6 +349,7 @@ const content = {
         ],
         price: "S/ 130",
         features: [
+          "Breakfast included",
           "Up to 2 guests",
           "21 m²",
           "Smart TV with cable channels",
@@ -358,8 +359,7 @@ const content = {
           "Hairdryer",
           "24-hour hot water",
           "Desk and work table",
-          "Closet",
-          "Breakfast included"
+          "Closet"
         ]
       },
       {
@@ -377,6 +377,7 @@ const content = {
         ],
         price: "S/ 120",
         features: [
+          "Breakfast included",
           "Up to 2 guests",
           "18 m²",
           "Smart TV with cable channels",
@@ -386,8 +387,7 @@ const content = {
           "Hairdryer",
           "24-hour hot water",
           "Desk and work table",
-          "Closet",
-          "Breakfast included"
+          "Closet"
         ]
       },
       {
@@ -402,6 +402,7 @@ const content = {
         ],
         price: "S/ 80",
         features: [
+          "Breakfast included",
           "1 guest",
           "16 m²",
           "Smart TV with cable channels",
@@ -410,8 +411,7 @@ const content = {
           "Hairdryer",
           "24-hour hot water",
           "Desk and work table",
-          "Closet",
-          "Breakfast included"
+          "Closet"
         ]
       },
       {
@@ -428,6 +428,7 @@ const content = {
         ],
         price: "S/ 120",
         features: [
+          "Breakfast included",
           "Up to 2 guests + 1 child under 5",
           "24 m²",
           "Smart TV with cable channels",
@@ -436,8 +437,7 @@ const content = {
           "Hairdryer",
           "24-hour hot water",
           "Work table",
-          "Closet",
-          "Breakfast included"
+          "Closet"
         ]
       },
       {
@@ -453,6 +453,7 @@ const content = {
         ],
         price: "S/ 130",
         features: [
+          "Breakfast included",
           "Up to 3 guests",
           "24 m²",
           "Smart TV with cable channels",
@@ -461,8 +462,7 @@ const content = {
           "Hairdryer",
           "24-hour hot water",
           "Work table",
-          "Closet",
-          "Breakfast included"
+          "Closet"
         ]
       },
       {
@@ -475,6 +475,7 @@ const content = {
         ],
         price: "S/ 120",
         features: [
+          "Breakfast included",
           "Up to 3 guests",
           "21 m²",
           "Smart TV with cable channels",
@@ -483,8 +484,7 @@ const content = {
           "Hairdryer",
           "24-hour hot water",
           "Work table",
-          "Closet",
-          "Breakfast included"
+          "Closet"
         ]
       },
       {
@@ -498,6 +498,7 @@ const content = {
         ],
         price: "S/ 130",
         features: [
+          "Breakfast included",
           "Up to 3 guests",
           "25 m²",
           "Smart TV with cable channels",
@@ -506,8 +507,7 @@ const content = {
           "Hairdryer",
           "24-hour hot water",
           "Work table",
-          "Closet",
-          "Breakfast included"
+          "Closet"
         ]
       },
       {
@@ -522,6 +522,7 @@ const content = {
         ],
         price: "S/ 160",
         features: [
+          "Breakfast included",
           "Up to 4 guests",
           "29 m²",
           "Smart TV with cable channels",
@@ -531,8 +532,7 @@ const content = {
           "Heating",
           "24-hour hot water",
           "Work table",
-          "Closet",
-          "Breakfast included"
+          "Closet"
         ]
       },
       {
@@ -547,6 +547,7 @@ const content = {
         ],
         price: "S/ 65",
         features: [
+          "Breakfast included",
           "1 guest",
           "11 m²",
           "Smart TV with cable channels",
@@ -555,8 +556,7 @@ const content = {
           "Hairdryer",
           "24-hour hot water",
           "Work table",
-          "Closet",
-          "Breakfast included"
+          "Closet"
         ]
       },
       {
@@ -571,6 +571,7 @@ const content = {
         ],
         price: "S/ 88",
         features: [
+          "American breakfast included",
           "Up to 2 guests",
           "16 m²",
           "32\" Smart TV with cable channels",
@@ -580,8 +581,7 @@ const content = {
           "24-hour hot water",
           "Work table",
           "Closet",
-          "220V bedside power outlets",
-          "American breakfast included"
+          "220V bedside power outlets"
         ]
       }
     ]
