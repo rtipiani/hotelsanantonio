@@ -148,7 +148,7 @@ const content = {
       {
         id: 8,
         name: "Habitación Familiar",
-        description: "Amplia y confortable habitación con baño privado, equipada con una cama matrimonial y una cama adicional de 1½ plazas. Ideal para familias con niños o grupos de amigos que buscan comodidad, amplitud y un ambiente acogedor para disfrutar de una estancia placentera en Arequipa.",
+        description: "Amplia y confortable habitación con baño privado, equipada con una cama matrimonial y una cama de 1½ plazas. Ideal para familias o grupos de viajeros que buscan comodidad y amplitud.",
         image: "/familiar/familiar1.avif",
         images: [
           "/familiar/familiar1.avif",
@@ -156,19 +156,18 @@ const content = {
           "/familiar/familiar3.avif",
           "/familiar/familiar4.avif"
         ],
-        price: "S/ 125",
+        price: "S/ 130",
         features: [
           "Hasta 3 huéspedes",
           "24 m²",
-          "Smart TV de 32\" con canales por cable",
+          "Smart TV, con canales por cable",
           "WiFi de alta velocidad",
           "Amenidades de cortesía",
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Mesa de trabajo",
           "Clóset",
-          "Enchufes de 220 V junto a la cama",
-          "Desayuno americano incluido"
+          "Desayuno incluido"
         ]
       },
       {
@@ -439,7 +438,7 @@ const content = {
       {
         id: 8,
         name: "Family Room",
-        description: "Spacious and comfortable room with a private bathroom, equipped with one double matrimonial bed and an additional twin-size (1½ plaza) bed. Ideal for families with children or groups of friends seeking comfort, extra space, and a cozy environment for an enjoyable stay in Arequipa.",
+        description: "Spacious and comfortable room with a private bathroom, equipped with one double matrimonial bed and one twin-size (1½ plaza) bed. Ideal for families or groups of travelers seeking comfort and spaciousness.",
         image: "/familiar/familiar1.avif",
         images: [
           "/familiar/familiar1.avif",
@@ -447,19 +446,18 @@ const content = {
           "/familiar/familiar3.avif",
           "/familiar/familiar4.avif"
         ],
-        price: "S/ 125",
+        price: "S/ 130",
         features: [
           "Up to 3 guests",
           "24 m²",
-          "32\" Smart TV with cable channels",
+          "Smart TV with cable channels",
           "High-speed Wi-Fi",
           "Complimentary amenities",
           "Hairdryer",
           "24-hour hot water",
           "Work table",
           "Closet",
-          "220V bedside power outlets",
-          "American breakfast included"
+          "Breakfast included"
         ]
       },
       {
