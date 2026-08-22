@@ -267,31 +267,6 @@ const content = {
           "Mesa de trabajo",
           "Clóset"
         ]
-      },
-      {
-        id: 3,
-        name: "Habitación Matrimonial Económica",
-        description: "Confortable habitación con baño privado, equipada con una cama matrimonial y vista interior. Ideal para parejas o amigos que buscan una estancia cómoda y funcional, en un ambiente acogedor, perfecto para disfrutar de un descanso reparador y una excelente relación calidad-precio.",
-        image: "/matrimonial_economica/matrimonial_economica1.avif",
-        images: [
-          "/matrimonial_economica/matrimonial_economica1.avif",
-          "/matrimonial_economica/matrimonial_economica2.avif",
-          "/matrimonial_economica/matrimonial_economica3.avif"
-        ],
-        price: "S/ 88",
-        features: [
-          "Desayuno americano incluido",
-          "Hasta 2 huéspedes",
-          "16 m²",
-          "Smart TV de 32\" con canales por cable",
-          "WiFi de alta velocidad",
-          "Amenidades de cortesía",
-          "Secador de cabello",
-          "Agua caliente las 24 horas",
-          "Mesa de trabajo",
-          "Clóset",
-          "Enchufes de 220 V junto a la cama"
-        ]
       }
     ]
   },
@@ -557,31 +532,6 @@ const content = {
           "24-hour hot water",
           "Work table",
           "Closet"
-        ]
-      },
-      {
-        id: 3,
-        name: "Economy Matrimonial Room",
-        description: "Comfortable room with a private bathroom, equipped with a double matrimonial bed and an interior view. Ideal for couples or friends looking for a comfortable and functional stay in a cozy atmosphere, perfect for enjoying a restful sleep and an excellent quality-price ratio.",
-        image: "/matrimonial_economica/matrimonial_economica1.avif",
-        images: [
-          "/matrimonial_economica/matrimonial_economica1.avif",
-          "/matrimonial_economica/matrimonial_economica2.avif",
-          "/matrimonial_economica/matrimonial_economica3.avif"
-        ],
-        price: "S/ 88",
-        features: [
-          "American breakfast included",
-          "Up to 2 guests",
-          "16 m²",
-          "32\" Smart TV with cable channels",
-          "High-speed Wi-Fi",
-          "Complimentary amenities",
-          "Hairdryer",
-          "24-hour hot water",
-          "Work table",
-          "Closet",
-          "220V bedside power outlets"
         ]
       }
     ]
