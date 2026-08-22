@@ -12,81 +12,6 @@ const content = {
     button: "Consultar ahora",
     rooms: [
       {
-        id: 1,
-        name: "Habitación Individual Básica",
-        description: "Acogedora habitación con baño privado, equipada con una cama de 1½ plazas y vista interior. Su diseño compacto y funcional brinda un ambiente acogedor y confortable, ideal para disfrutar de un descanso reparador. Es una excelente opción para viajeros de negocios o turistas que buscan una destacada relación calidad-precio durante su estadía en Arequipa.",
-        image: "/individual_basica/individual_basica1.avif",
-        images: [
-          "/individual_basica/individual_basica1.avif",
-          "/individual_basica/individual_basica2.avif",
-          "/individual_basica/individual_basica3.avif"
-        ],
-        price: "S/ 55",
-        features: [
-          "1 huésped",
-          "11 m²",
-          "Smart TV de 32\" con canales por cable",
-          "WiFi de alta velocidad",
-          "Amenidades de cortesía",
-          "Secador de cabello",
-          "Agua caliente las 24 horas",
-          "Mesa de trabajo",
-          "Clóset",
-          "Enchufes de 220 V junto a la cama",
-          "Desayuno americano incluido"
-        ]
-      },
-      {
-        id: 2,
-        name: "Habitación Individual Superior",
-        description: "Disfrute de una amplia y confortable habitación con baño privado, equipada con una cama de 2 plazas. Diseñada para ofrecer mayor comodidad y confort, es ideal para viajeros de negocios o turismo que buscan una estancia placentera y un excelente descanso durante su visita a Arequipa.",
-        image: "/individual_superior/individual_superior1.avif",
-        images: [
-          "/individual_superior/individual_superior1.avif",
-          "/individual_superior/individual_superior2.avif",
-          "/individual_superior/individual_superior3.avif"
-        ],
-        price: "S/ 80",
-        features: [
-          "1 huésped",
-          "16 m²",
-          "Smart TV de 32\" con canales por cable",
-          "WiFi de alta velocidad",
-          "Amenidades de cortesía",
-          "Secador de cabello",
-          "Agua caliente las 24 horas",
-          "Escritorio y mesa de trabajo",
-          "Clóset",
-          "Enchufes de 220 V junto a la cama",
-          "Desayuno americano incluido"
-        ]
-      },
-      {
-        id: 3,
-        name: "Habitación Matrimonial Económica",
-        description: "Confortable habitación con baño privado, equipada con una cama matrimonial y vista interior. Ideal para parejas o amigos que buscan una estancia cómoda y funcional, en un ambiente acogedor, perfecto para disfrutar de un descanso reparador y una excelente relación calidad-precio.",
-        image: "/matrimonial_economica/matrimonial_economica1.avif",
-        images: [
-          "/matrimonial_economica/matrimonial_economica1.avif",
-          "/matrimonial_economica/matrimonial_economica2.avif",
-          "/matrimonial_economica/matrimonial_economica3.avif"
-        ],
-        price: "S/ 88",
-        features: [
-          "Hasta 2 huéspedes",
-          "16 m²",
-          "Smart TV de 32\" con canales por cable",
-          "WiFi de alta velocidad",
-          "Amenidades de cortesía",
-          "Secador de cabello",
-          "Agua caliente las 24 horas",
-          "Mesa de trabajo",
-          "Clóset",
-          "Enchufes de 220 V junto a la cama",
-          "Desayuno americano incluido"
-        ]
-      },
-      {
         id: 4,
         name: "Habitación Matrimonial Estándar",
         description: "Confortable habitación con baño privado, equipada con una cama matrimonial y vista exterior. Destaca por su excelente iluminación y ventilación natural, ofreciendo un ambiente acogedor y confortable. Es ideal para parejas, matrimonios o amigos que buscan una estancia placentera en la ciudad de Arequipa.",
@@ -174,6 +99,31 @@ const content = {
         ]
       },
       {
+        id: 2,
+        name: "Habitación Individual Superior",
+        description: "Disfrute de una amplia y confortable habitación con baño privado, equipada con una cama de 2 plazas. Diseñada para ofrecer mayor comodidad y confort, es ideal para viajeros de negocios o turismo que buscan una estancia placentera y un excelente descanso durante su visita a Arequipa.",
+        image: "/individual_superior/individual_superior1.avif",
+        images: [
+          "/individual_superior/individual_superior1.avif",
+          "/individual_superior/individual_superior2.avif",
+          "/individual_superior/individual_superior3.avif"
+        ],
+        price: "S/ 80",
+        features: [
+          "1 huésped",
+          "16 m²",
+          "Smart TV de 32\" con canales por cable",
+          "WiFi de alta velocidad",
+          "Amenidades de cortesía",
+          "Secador de cabello",
+          "Agua caliente las 24 horas",
+          "Escritorio y mesa de trabajo",
+          "Clóset",
+          "Enchufes de 220 V junto a la cama",
+          "Desayuno americano incluido"
+        ]
+      },
+      {
         id: 7,
         name: "Habitación Doble Superior",
         description: "Amplia y confortable habitación con baño privado, equipada con una cama matrimonial y una cama de 1½ plazas. Ideal para familias, amigos o compañeros de trabajo que buscan comodidad, amplitud y un ambiente acogedor para disfrutar de una estancia placentera en Arequipa.",
@@ -227,18 +177,17 @@ const content = {
         ]
       },
       {
-        id: 9,
-        name: "Habitación Triple Estándar",
-        description: "Amplia y confortable habitación con baño privado, equipada con tres camas individuales y ventana con vista exterior, que brinda una excelente iluminación y ventilación natural. Ideal para familias, grupos de amigos o compañeros de viaje que buscan comodidad, amplitud y una estancia placentera en Arequipa.",
-        image: "/triple_estandar/triple_estandar1.avif",
+        id: 10,
+        name: "Habitación Triple Económica",
+        description: "Acogedora habitación de diseño compacto con baño privado, equipada con tres camas individuales. Una excelente opción para familias o grupos de amigos que buscan comodidad, funcionalidad y una excelente relación calidad-precio durante su estadía en Arequipa.",
+        image: "/triple_economica/triple_economica1.avif",
         images: [
-          "/triple_estandar/triple_estandar1.avif",
-          "/triple_estandar/triple_estandar2.avif"
+          "/triple_economica/triple_economica1.avif"
         ],
-        price: "S/ 125",
+        price: "S/ 117",
         features: [
           "Hasta 3 huéspedes",
-          "25 m²",
+          "19 m²",
           "Smart TV de 32\" con canales por cable",
           "WiFi de alta velocidad",
           "Amenidades de cortesía",
@@ -251,17 +200,18 @@ const content = {
         ]
       },
       {
-        id: 10,
-        name: "Habitación Triple Económica",
-        description: "Acogedora habitación de diseño compacto con baño privado, equipada con tres camas individuales. Una excelente opción para familias o grupos de amigos que buscan comodidad, funcionalidad y una excelente relación calidad-precio durante su estadía en Arequipa.",
-        image: "/triple_economica/triple_economica1.avif",
+        id: 9,
+        name: "Habitación Triple Estándar",
+        description: "Amplia y confortable habitación con baño privado, equipada con tres camas individuales y ventana con vista exterior, que brinda una excelente iluminación y ventilación natural. Ideal para familias, grupos de amigos o compañeros de viaje que buscan comodidad, amplitud y una estancia placentera en Arequipa.",
+        image: "/triple_estandar/triple_estandar1.avif",
         images: [
-          "/triple_economica/triple_economica1.avif"
+          "/triple_estandar/triple_estandar1.avif",
+          "/triple_estandar/triple_estandar2.avif"
         ],
-        price: "S/ 117",
+        price: "S/ 125",
         features: [
           "Hasta 3 huéspedes",
-          "19 m²",
+          "25 m²",
           "Smart TV de 32\" con canales por cable",
           "WiFi de alta velocidad",
           "Amenidades de cortesía",
@@ -298,6 +248,56 @@ const content = {
           "Enchufes de 220 V junto a la cama",
           "Desayuno americano incluido"
         ]
+      },
+      {
+        id: 1,
+        name: "Habitación Individual Básica",
+        description: "Acogedora habitación con baño privado, equipada con una cama de 1½ plazas y vista interior. Su diseño compacto y funcional brinda un ambiente acogedor y confortable, ideal para disfrutar de un descanso reparador. Es una excelente opción para viajeros de negocios o turistas que buscan una destacada relación calidad-precio durante su estadía en Arequipa.",
+        image: "/individual_basica/individual_basica1.avif",
+        images: [
+          "/individual_basica/individual_basica1.avif",
+          "/individual_basica/individual_basica2.avif",
+          "/individual_basica/individual_basica3.avif"
+        ],
+        price: "S/ 55",
+        features: [
+          "1 huésped",
+          "11 m²",
+          "Smart TV de 32\" con canales por cable",
+          "WiFi de alta velocidad",
+          "Amenidades de cortesía",
+          "Secador de cabello",
+          "Agua caliente las 24 horas",
+          "Mesa de trabajo",
+          "Clóset",
+          "Enchufes de 220 V junto a la cama",
+          "Desayuno americano incluido"
+        ]
+      },
+      {
+        id: 3,
+        name: "Habitación Matrimonial Económica",
+        description: "Confortable habitación con baño privado, equipada con una cama matrimonial y vista interior. Ideal para parejas o amigos que buscan una estancia cómoda y funcional, en un ambiente acogedor, perfecto para disfrutar de un descanso reparador y una excelente relación calidad-precio.",
+        image: "/matrimonial_economica/matrimonial_economica1.avif",
+        images: [
+          "/matrimonial_economica/matrimonial_economica1.avif",
+          "/matrimonial_economica/matrimonial_economica2.avif",
+          "/matrimonial_economica/matrimonial_economica3.avif"
+        ],
+        price: "S/ 88",
+        features: [
+          "Hasta 2 huéspedes",
+          "16 m²",
+          "Smart TV de 32\" con canales por cable",
+          "WiFi de alta velocidad",
+          "Amenidades de cortesía",
+          "Secador de cabello",
+          "Agua caliente las 24 horas",
+          "Mesa de trabajo",
+          "Clóset",
+          "Enchufes de 220 V junto a la cama",
+          "Desayuno americano incluido"
+        ]
       }
     ]
   },
@@ -308,81 +308,6 @@ const content = {
     from: "From",
     button: "Inquire now",
     rooms: [
-      {
-        id: 1,
-        name: "Basic Single Room",
-        description: "Cozy room with private bathroom, equipped with a twin-size (1½ plaza) bed and an interior view. Its compact and functional design provides a welcoming and comfortable atmosphere, ideal for enjoying a restful sleep. It is an excellent choice for business travelers or tourists looking for an outstanding quality-price ratio during their stay in Arequipa.",
-        image: "/individual_basica/individual_basica1.avif",
-        images: [
-          "/individual_basica/individual_basica1.avif",
-          "/individual_basica/individual_basica2.avif",
-          "/individual_basica/individual_basica3.avif"
-        ],
-        price: "S/ 55",
-        features: [
-          "1 guest",
-          "11 m²",
-          "32\" Smart TV with cable channels",
-          "High-speed Wi-Fi",
-          "Complimentary amenities",
-          "Hairdryer",
-          "24-hour hot water",
-          "Work table",
-          "Closet",
-          "220V bedside power outlets",
-          "American breakfast included"
-        ]
-      },
-      {
-        id: 2,
-        name: "Superior Single Room",
-        description: "Enjoy a spacious and comfortable room with private bathroom, equipped with a full-size (2 plaza) bed. Designed to offer enhanced comfort and convenience, it is ideal for business or leisure travelers seeking a pleasant stay and exceptional rest during their visit to Arequipa.",
-        image: "/individual_superior/individual_superior1.avif",
-        images: [
-          "/individual_superior/individual_superior1.avif",
-          "/individual_superior/individual_superior2.avif",
-          "/individual_superior/individual_superior3.avif"
-        ],
-        price: "S/ 80",
-        features: [
-          "1 guest",
-          "16 m²",
-          "32\" Smart TV with cable channels",
-          "High-speed Wi-Fi",
-          "Complimentary amenities",
-          "Hairdryer",
-          "24-hour hot water",
-          "Desk and work table",
-          "Closet",
-          "220V bedside power outlets",
-          "American breakfast included"
-        ]
-      },
-      {
-        id: 3,
-        name: "Economy Matrimonial Room",
-        description: "Comfortable room with a private bathroom, equipped with a double matrimonial bed and an interior view. Ideal for couples or friends looking for a comfortable and functional stay in a cozy atmosphere, perfect for enjoying a restful sleep and an excellent quality-price ratio.",
-        image: "/matrimonial_economica/matrimonial_economica1.avif",
-        images: [
-          "/matrimonial_economica/matrimonial_economica1.avif",
-          "/matrimonial_economica/matrimonial_economica2.avif",
-          "/matrimonial_economica/matrimonial_economica3.avif"
-        ],
-        price: "S/ 88",
-        features: [
-          "Up to 2 guests",
-          "16 m²",
-          "32\" Smart TV with cable channels",
-          "High-speed Wi-Fi",
-          "Complimentary amenities",
-          "Hairdryer",
-          "24-hour hot water",
-          "Work table",
-          "Closet",
-          "220V bedside power outlets",
-          "American breakfast included"
-        ]
-      },
       {
         id: 4,
         name: "Standard Matrimonial Room",
@@ -471,6 +396,31 @@ const content = {
         ]
       },
       {
+        id: 2,
+        name: "Superior Single Room",
+        description: "Enjoy a spacious and comfortable room with private bathroom, equipped with a full-size (2 plaza) bed. Designed to offer enhanced comfort and convenience, it is ideal for business or leisure travelers seeking a pleasant stay and exceptional rest during their visit to Arequipa.",
+        image: "/individual_superior/individual_superior1.avif",
+        images: [
+          "/individual_superior/individual_superior1.avif",
+          "/individual_superior/individual_superior2.avif",
+          "/individual_superior/individual_superior3.avif"
+        ],
+        price: "S/ 80",
+        features: [
+          "1 guest",
+          "16 m²",
+          "32\" Smart TV with cable channels",
+          "High-speed Wi-Fi",
+          "Complimentary amenities",
+          "Hairdryer",
+          "24-hour hot water",
+          "Desk and work table",
+          "Closet",
+          "220V bedside power outlets",
+          "American breakfast included"
+        ]
+      },
+      {
         id: 7,
         name: "Superior Twin Room",
         description: "Spacious and comfortable room with a private bathroom, equipped with one double matrimonial bed and one twin-size (1½ plaza) bed. Ideal for families, friends, or coworkers seeking comfort, spaciousness, and a welcoming ambiance for an enjoyable stay in Arequipa.",
@@ -524,18 +474,17 @@ const content = {
         ]
       },
       {
-        id: 9,
-        name: "Standard Triple Room",
-        description: "Spacious and comfortable room with a private bathroom, equipped with three single beds and an exterior window that affords excellent natural lighting and ventilation. Ideal for families, groups of friends, or travel companions seeking comfort, space, and a pleasant stay in Arequipa.",
-        image: "/triple_estandar/triple_estandar1.avif",
+        id: 10,
+        name: "Economy Triple Room",
+        description: "Cozy room with a compact design and private bathroom, equipped with three single beds. An excellent option for families or groups of friends seeking comfort, functionality, and an extraordinary value during their stay in Arequipa.",
+        image: "/triple_economica/triple_economica1.avif",
         images: [
-          "/triple_estandar/triple_estandar1.avif",
-          "/triple_estandar/triple_estandar2.avif"
+          "/triple_economica/triple_economica1.avif"
         ],
-        price: "S/ 125",
+        price: "S/ 117",
         features: [
           "Up to 3 guests",
-          "25 m²",
+          "19 m²",
           "32\" Smart TV with cable channels",
           "High-speed Wi-Fi",
           "Complimentary amenities",
@@ -548,17 +497,18 @@ const content = {
         ]
       },
       {
-        id: 10,
-        name: "Economy Triple Room",
-        description: "Cozy room with a compact design and private bathroom, equipped with three single beds. An excellent option for families or groups of friends seeking comfort, functionality, and an extraordinary value during their stay in Arequipa.",
-        image: "/triple_economica/triple_economica1.avif",
+        id: 9,
+        name: "Standard Triple Room",
+        description: "Spacious and comfortable room with a private bathroom, equipped with three single beds and an exterior window that affords excellent natural lighting and ventilation. Ideal for families, groups of friends, or travel companions seeking comfort, space, and a pleasant stay in Arequipa.",
+        image: "/triple_estandar/triple_estandar1.avif",
         images: [
-          "/triple_economica/triple_economica1.avif"
+          "/triple_estandar/triple_estandar1.avif",
+          "/triple_estandar/triple_estandar2.avif"
         ],
-        price: "S/ 117",
+        price: "S/ 125",
         features: [
           "Up to 3 guests",
-          "19 m²",
+          "25 m²",
           "32\" Smart TV with cable channels",
           "High-speed Wi-Fi",
           "Complimentary amenities",
@@ -589,6 +539,56 @@ const content = {
           "Complimentary amenities",
           "Hairdryer",
           "Heating",
+          "24-hour hot water",
+          "Work table",
+          "Closet",
+          "220V bedside power outlets",
+          "American breakfast included"
+        ]
+      },
+      {
+        id: 1,
+        name: "Basic Single Room",
+        description: "Cozy room with private bathroom, equipped with a twin-size (1½ plaza) bed and an interior view. Its compact and functional design provides a welcoming and comfortable atmosphere, ideal for enjoying a restful sleep. It is an excellent choice for business travelers or tourists looking for an outstanding quality-price ratio during their stay in Arequipa.",
+        image: "/individual_basica/individual_basica1.avif",
+        images: [
+          "/individual_basica/individual_basica1.avif",
+          "/individual_basica/individual_basica2.avif",
+          "/individual_basica/individual_basica3.avif"
+        ],
+        price: "S/ 55",
+        features: [
+          "1 guest",
+          "11 m²",
+          "32\" Smart TV with cable channels",
+          "High-speed Wi-Fi",
+          "Complimentary amenities",
+          "Hairdryer",
+          "24-hour hot water",
+          "Work table",
+          "Closet",
+          "220V bedside power outlets",
+          "American breakfast included"
+        ]
+      },
+      {
+        id: 3,
+        name: "Economy Matrimonial Room",
+        description: "Comfortable room with a private bathroom, equipped with a double matrimonial bed and an interior view. Ideal for couples or friends looking for a comfortable and functional stay in a cozy atmosphere, perfect for enjoying a restful sleep and an excellent quality-price ratio.",
+        image: "/matrimonial_economica/matrimonial_economica1.avif",
+        images: [
+          "/matrimonial_economica/matrimonial_economica1.avif",
+          "/matrimonial_economica/matrimonial_economica2.avif",
+          "/matrimonial_economica/matrimonial_economica3.avif"
+        ],
+        price: "S/ 88",
+        features: [
+          "Up to 2 guests",
+          "16 m²",
+          "32\" Smart TV with cable channels",
+          "High-speed Wi-Fi",
+          "Complimentary amenities",
+          "Hairdryer",
           "24-hour hot water",
           "Work table",
           "Closet",
@@ -659,9 +659,10 @@ function RoomCard({ room, data, hoveredId, setHoveredId }: any) {
         </div>
         
         {/* Price tag */}
-        <div className="absolute top-4 right-4 z-20 bg-white/95 backdrop-blur-sm px-4 py-2">
-          <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-1">{data.from}</p>
-          <p className="text-xl font-serif text-brand-primary-dark">{room.price}</p>
+        <div className="absolute top-4 right-4 z-20 bg-brand-text-muted px-4 py-2 flex flex-col items-center border-b-4 border-brand-primary shadow-md">
+          <p className="text-[10px] uppercase tracking-widest text-white mb-1.5">{data.from}</p>
+          <div className="w-full h-px bg-brand-primary mb-1.5"></div>
+          <p className="text-2xl font-serif text-white">{room.price}</p>
         </div>
 
         {/* Arrows */}

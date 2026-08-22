@@ -4,65 +4,156 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer.astro';
 ---
 
-<Layout title="Terms and Conditions">
+<Layout title="Reservation Policies and Conditions">
   <Header lang="en" client:load />
   
   <main class="flex-grow bg-brand-bg pt-12 pb-16">
     <div class="max-w-4xl mx-auto px-6 md:px-12 bg-white p-8 md:p-12 shadow-sm rounded-lg">
-      <h1 class="font-cinzel text-2xl md:text-3xl text-brand-text font-bold mb-8 text-center uppercase tracking-wider">Terms and Conditions</h1>
+      <h1 class="font-cinzel text-2xl md:text-3xl text-brand-text font-bold mb-8 text-center uppercase tracking-wider">Reservation Policies and Conditions</h1>
       
-      <div class="space-y-6 text-brand-text/80 leading-relaxed text-xs md:text-sm">
+      <div class="space-y-8 text-brand-text/80 leading-relaxed text-sm md:text-base">
         <section>
-          <p class="mb-3">Welcome to Hotel Plaza San Antonio. The following terms and conditions govern your use of our website and booking of accommodation services. By making a reservation or utilizing our portal, you formally accept these terms in full.</p>
+          <p class="mb-4"><strong>Last updated:</strong> July 2026</p>
+          <p class="mb-4">We appreciate your preference for Hotel Plaza San Antonio ★★★ – Arequipa. The following policies aim to provide a safe, transparent, and reliable reservation process for all our guests. By confirming a reservation, the guest declares to have read and accepted these conditions.</p>
         </section>
 
         <section>
-          <h2 class="font-bold text-xl text-brand-text mb-3">1. Reservations and Payments</h2>
-          <ul class="list-disc pl-6 mb-3 space-y-2">
-            <li>All reservation requests remain subject to room availability and formal written confirmation from hotel management.</li>
-            <li>Guaranteeing reservations may necessitate valid debit/credit card pre-authorization details or an upfront bank transfer deposit, depending upon rate tariff restrictions.</li>
-            <li>Published room prices reflect applicable national sales taxes unless clearly indicated otherwise (non-resident foreign tourists visiting Peru may qualify for exemption from the 18% IGV VAT upon presenting valid passports and Andean Migration Cards at check-in).</li>
-            <li>Outstanding accommodation balances must be settled upon check-in or checkout according to reception procedures and booked tariff conditions.</li>
+          <h2 class="font-bold text-xl text-brand-text mb-4 border-b pb-2">1. Reservation Confirmation</h2>
+          <p class="mb-4">The reservation will be confirmed once Hotel Plaza San Antonio receives the corresponding guarantee through any of the following payment methods:</p>
+          <ul class="list-disc pl-6 mb-4 space-y-2">
+            <li>Credit or debit card.</li>
+            <li>Bank deposit.</li>
+            <li>Bank transfer.</li>
+            <li>Secure payment link issued by Hotel Plaza San Antonio.</li>
+            <li>Cash payment.</li>
+            <li>Other payment methods authorized by the hotel.</li>
+          </ul>
+          <p class="mb-4">Our Reservations team will consult you on your preferred payment method, offering the most comfortable, fast, and secure alternative to confirm your reservation.</p>
+          <p class="mb-4">For reservations guaranteed by credit card, the hotel may verify the validity of the card before the arrival date, without this implying an immediate charge, unless the conditions of the reserved rate indicate otherwise.</p>
+          <p class="mb-4">In rates with <strong>Payment at the Accommodation</strong>, the corresponding amount will be settled directly during the stay, according to the conditions of the selected rate.</p>
+          <p><strong>Payment currency:</strong> Soles (PEN) and US Dollars (USD).</p>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-4 border-b pb-2">2. Reception Area (Last Minute Reservations)</h2>
+          <p class="mb-4">For immediate reservations or inquiries outside the regular hours of the Reservations Area, you can contact our Reception directly.</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li><strong>Phone:</strong> (+51) 054 220502</li>
+            <li><strong>Mobile:</strong> +51 967 454 949</li>
           </ul>
         </section>
 
         <section>
-          <h2 class="font-bold text-xl text-brand-text mb-3">2. Check-in and Check-out Policies</h2>
-          <ul class="list-disc pl-6 mb-3 space-y-2">
-            <li><strong>Check-in (Arrival):</strong> From 1:00 PM (13:00) onwards (subject to room readiness; please notify reception of early arrivals).</li>
-            <li><strong>Check-out (Departure):</strong> Until 12:00 PM (Noon).</li>
-            <li>Requests regarding early arrivals (early check-in) or delayed departure times (late check-out) strictly rely on hotel room occupancy and may trigger supplementary hourly charges.</li>
-            <li>At check-in, every registering guest must display an official physical identity document (National ID DNI, valid international passport, or foreign alien resident card).</li>
+          <h2 class="font-bold text-xl text-brand-text mb-4 border-b pb-2">3. Reservations Area</h2>
+          <ul class="list-disc pl-6 mb-4 space-y-2">
+            <li><strong>WhatsApp:</strong> +51 973 341 847</li>
+            <li><strong>Phone:</strong> (+51) 054 220502</li>
+            <li><strong>Email:</strong> reservas@hotelplazasanantonio.com.pe / hplazasanantonio@gmail.com</li>
+          </ul>
+          <p>Our team will be happy to advise you on availability, rates, promotions, and room types to find the option that best suits your needs.</p>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-4 border-b pb-2">4. Check-in and Check-out Times</h2>
+          <ul class="list-disc pl-6 mb-4 space-y-2">
+            <li><strong>Check-in:</strong> From 12:30 p.m.</li>
+            <li><strong>Check-out:</strong> Until 11:45 a.m.</li>
+          </ul>
+          <p>Hotel Plaza San Antonio seeks to provide the greatest flexibility possible to its guests. Requests for Early Check-in and Late Check-out will be subject to availability and may be authorized free of charge or with an additional charge, depending on the hotel's occupancy and the requested time.</p>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-4 border-b pb-2">5. Cancellation Policy</h2>
+          <p class="mb-4">Hotel Plaza San Antonio maintains a flexible cancellation policy, which may vary depending on:</p>
+          <ul class="list-disc pl-6 mb-4 space-y-2">
+            <li>The type of rate reserved.</li>
+            <li>The room category.</li>
+            <li>The season.</li>
+            <li>The date of arrival.</li>
+            <li>The channel through which the reservation was made.</li>
+          </ul>
+          <p class="mb-4">Modifications, cancellations, or refund requests will be subject to the specific conditions of the contracted rate.</p>
+          <p>It is recommended to carefully review the reservation conditions before confirming your purchase.</p>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-4 border-b pb-2">6. Children Policy</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Children of all ages are welcome.</li>
+            <li>Children aged 6 or older are considered adults and must pay the corresponding rate, according to the reserved room and rate plan.</li>
+            <li>To correctly calculate the reservation amount, we recommend indicating the number of children and their ages at the time of booking.</li>
+            <li>Cribs are subject to availability and must be requested in advance.</li>
+            <li>The hotel does not have extra or supplementary beds.</li>
           </ul>
         </section>
 
         <section>
-          <h2 class="font-bold text-xl text-brand-text mb-3">3. Cancellation and Modification Policies</h2>
-          <ul class="list-disc pl-6 mb-3 space-y-2">
-            <li>Specific reservation cancellation terms rely directly upon the promotional rate category selected during online booking; please inspect tariff conditions before confirming reservations.</li>
-            <li>Standard flexible tariffs require formal notice submitted prior to designated booking cutoff windows to prevent monetary penalties (customarily equivalent to a one-night accommodation charge).</li>
-            <li>In circumstances of "No Show" (failure to arrive on confirmed arrival dates without advance notification), the hotel will bill the initial overnight stay or total reservation balance in line with selected booking constraints.</li>
+          <h2 class="font-bold text-xl text-brand-text mb-4 border-b pb-2">7. Age Restriction</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>The minimum age to Check-in is 18 years old.</li>
+            <li>Underage guests may only stay when accompanied by a parent or legal guardian, who must present the corresponding identity documentation, according to current Peruvian regulations.</li>
           </ul>
         </section>
 
         <section>
-          <h2 class="font-bold text-xl text-brand-text mb-3">4. Hotel Rules and Regulations</h2>
-          <ul class="list-disc pl-6 mb-3 space-y-2">
-            <li><strong>Smoking Policy:</strong> Smoking is strictly forbidden within bedrooms, interior hallways, breakfast rooms, and all covered common property areas. Special deep-cleaning fees will apply should guests violate interior smoke prohibitions.</li>
-            <li><strong>Pet Policy:</strong> Please communicate with reception prior to booking regarding companion animal allowances, as pets may be restricted or subject to distinct accommodation conditions and sanitation surcharges.</li>
-            <li><strong>Property Damage:</strong> Registered guests retain financial responsibility regarding accidental or intentional harm caused to hotel fixtures, equipment, structural finishes, or linens during their residency; management reserves the right to charge appropriate repair or full item replacement costs.</li>
-            <li><strong>Guest Conduct:</strong> Visitors are expected to demonstrate civil, courteous, and respectful manners towards fellow patrons and hotel hospitality personnel; management retains statutory rights of admission and order enforcement.</li>
+          <h2 class="font-bold text-xl text-brand-text mb-4 border-b pb-2">8. Pet Policy</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Hotel Plaza San Antonio admits pets only upon prior request.</li>
+            <li>Acceptance will be subject to availability and may incur an additional supplement.</li>
+            <li>Pets must remain under the responsibility of their owners, respect the hotel's coexistence rules, and have the corresponding health documentation when required.</li>
           </ul>
         </section>
 
         <section>
-          <h2 class="font-bold text-xl text-brand-text mb-3">5. Property Liability</h2>
-          <p class="mb-3">Hotel Plaza San Antonio EIRL cannot assume legal liability concerning damage, loss, or theft of unprotected money, jewelry, electronic hardware, or travel credentials left unsecured inside guest chambers. We strongly urge guests to utilize personal room security boxes.</p>
+          <h2 class="font-bold text-xl text-brand-text mb-4 border-b pb-2">9. Payment Methods</h2>
+          <p class="mb-4">We accept the following payment methods:</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 pl-6">
+            <ul class="list-disc space-y-2">
+              <li>Visa</li>
+              <li>Mastercard</li>
+              <li>American Express</li>
+              <li>Diners Club</li>
+            </ul>
+            <ul class="list-disc space-y-2">
+              <li>Maestro</li>
+              <li>UnionPay</li>
+              <li>Debit cards</li>
+              <li>Credit cards</li>
+            </ul>
+            <ul class="list-disc space-y-2">
+              <li>Bank transfers</li>
+              <li>Bank deposits</li>
+              <li>Payment link</li>
+              <li>Cash</li>
+            </ul>
+          </div>
         </section>
 
         <section>
-          <h2 class="font-bold text-xl text-brand-text mb-3">6. Policy Modifications</h2>
-          <p class="mb-3">Hotel Plaza San Antonio reserves the right to revise or adjust these Terms and Conditions at management's discretion. Updated regulatory clauses come into legal effect immediately following publication on this official domain.</p>
+          <h2 class="font-bold text-xl text-brand-text mb-4 border-b pb-2">10. Taxes</h2>
+          <p class="mb-4">Published rates do not include the General Sales Tax (IGV) corresponding to 10.5%, unless expressly stated otherwise.</p>
+          <p class="mb-4">According to current Peruvian legislation, non-domiciled foreign guests may access the tax exemption applicable to accommodation services, provided they meet the requirements established by the corresponding regulations.</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Foreign guests staying up to 59 days in Peruvian territory may access said exemption.</li>
+            <li>Those staying 60 days or more will be subject to the payment of the corresponding tax.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-4 border-b pb-2">11. Terms and Conditions</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>By confirming a reservation, the guest declares to have read, understood, and accepted these Reservation Policies and Conditions, as well as the Internal Regulations of Hotel Plaza San Antonio ★★★ – Arequipa.</li>
+            <li>The hotel reserves the right to verify the information provided during the reservation process and request the presentation of a valid official identity document at the time of Check-in, according to Peruvian regulations.</li>
+            <li>Rates include only the services expressly indicated in the reservation confirmation. Any additional service requested during the stay will be billed separately.</li>
+            <li>The hotel may modify its rates, promotions, policies, and reservation conditions when operational, commercial, or legal changes require it.</li>
+            <li>Special requests (floor, view, bed type, early check-in, late check-out, or others) will be subject to availability and cannot be guaranteed until the time of Check-in.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-bold text-xl text-brand-text mb-4 border-b pb-2">12. Commitment to Our Guests</h2>
+          <p class="mb-4">At Hotel Plaza San Antonio ★★★ – Arequipa we are committed to offering a safe, transparent, and reliable reservation process, providing warm, personalized, and efficient service from the first contact until the end of your stay.</p>
+          <p>Our goal is to offer an accommodation experience characterized by the quality of service, the comfort of our facilities, and the hospitality that distinguishes the White City of Arequipa.</p>
         </section>
       </div>
     </div>
