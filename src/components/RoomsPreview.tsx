@@ -42,7 +42,7 @@ const content = {
       {
         id: 5,
         name: "Habitación Queen Ejecutiva",
-        description: "Disfrute de una exclusiva habitación con cama Queen, baño privado y una privilegiada vista panorámica a la Plaza e Iglesia San Antonio y a los majestuosos volcanes de Arequipa. Diseñada para ofrecer el máximo confort, es la opción ideal para viajeros de negocios, parejas y huéspedes que buscan una experiencia de hospedaje superior.",
+        description: "Exclusiva habitación con cama Queen, baño privado y privilegiada vista panorámica a la Plaza e Iglesia San Antonio y a los volcanes. Diseñada para brindar mayor confort, es ideal para viajeros de negocios o turismo que buscan una experiencia de hospedaje superior.",
         image: "/queen_ejecutiva/queen_ejecutiva1.avif",
         images: [
           "/queen_ejecutiva/queen_ejecutiva1.avif",
@@ -52,11 +52,11 @@ const content = {
           "/queen_ejecutiva/queen_ejecutiva5.avif",
           "/queen_ejecutiva/queen_ejecutiva6.avif"
         ],
-        price: "S/ 120",
+        price: "S/ 130",
         features: [
           "Hasta 2 huéspedes",
           "21 m²",
-          "Smart TV de 43\" con canales por cable",
+          "Smart TV, con canales por cable",
           "WiFi de alta velocidad",
           "Minibar",
           "Amenidades de cortesía",
@@ -64,8 +64,7 @@ const content = {
           "Agua caliente las 24 horas",
           "Escritorio y mesa de trabajo",
           "Clóset",
-          "Enchufes de 220 V junto a la cama",
-          "Desayuno americano incluido"
+          "Desayuno incluido"
         ]
       },
       {
@@ -336,7 +335,7 @@ const content = {
       {
         id: 5,
         name: "Executive Queen Room",
-        description: "Enjoy an exclusive room featuring a Queen-size bed, private bathroom, and a privileged panoramic view of San Antonio Square, the historical church, and Arequipa's majestic volcanoes. Designed to offer maximum comfort, it is the ideal choice for business travelers, couples, and guests seeking a superior lodging experience.",
+        description: "Exclusive room with a Queen-size bed, private bathroom, and a privileged panoramic view of San Antonio Square, the Church, and the volcanoes. Designed to provide greater comfort, it is ideal for business or leisure travelers seeking a superior lodging experience.",
         image: "/queen_ejecutiva/queen_ejecutiva1.avif",
         images: [
           "/queen_ejecutiva/queen_ejecutiva1.avif",
@@ -346,11 +345,11 @@ const content = {
           "/queen_ejecutiva/queen_ejecutiva5.avif",
           "/queen_ejecutiva/queen_ejecutiva6.avif"
         ],
-        price: "S/ 120",
+        price: "S/ 130",
         features: [
           "Up to 2 guests",
           "21 m²",
-          "43\" Smart TV with cable channels",
+          "Smart TV with cable channels",
           "High-speed Wi-Fi",
           "Minibar",
           "Complimentary amenities",
@@ -358,8 +357,7 @@ const content = {
           "24-hour hot water",
           "Desk and work table",
           "Closet",
-          "220V bedside power outlets",
-          "American breakfast included"
+          "Breakfast included"
         ]
       },
       {
