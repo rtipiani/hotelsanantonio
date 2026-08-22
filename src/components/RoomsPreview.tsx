@@ -7,7 +7,11 @@ const content = {
   es: {
     badge: "Habitaciones diseñadas para su descanso",
     title: "Habitaciones",
-    desc: "Espacios diseñados para garantizar su descanso y comodidad. Contamos con 11 opciones ideales para viajes de negocios o turismo, equipadas con Smart TV, WiFi de alta velocidad y baño privado. Encuentre el ambiente perfecto para disfrutar de una estadía excepcional en el corazón de Arequipa.",
+    desc: [
+      "En Hotel Plaza San Antonio encontrará el espacio ideal para disfrutar de una estadía confortable. Contamos con 10 tipos de habitaciones, diseñadas para satisfacer las necesidades de viajeros corporativos, turistas nacionales e internacionales y familias, combinando comodidad, funcionalidad y una atención personalizada.",
+      "Todas nuestras habitaciones disponen de baño privado completamente equipado con amenidades de cortesía, toallas, secador de cabello, ducha y agua caliente las 24 horas. Además, cuentan con Smart TV con canales por cable, WiFi de alta velocidad, escritorio o mesa de trabajo, clóset y cómodas camas que garantizan un descanso reparador. Algunas categorías también ofrecen terraza o balcón, desde donde podrá disfrutar de una privilegiada vista a la Plaza e Iglesia San Antonio y a los majestuosos volcanes Misti, Chachani y Pichu Pichu.",
+      "Ya sea que viaje por negocios, turismo o en familia, encontrará la habitación ideal para disfrutar de una experiencia de confort, tranquilidad y hospitalidad en el corazón de Arequipa."
+    ],
     from: "Desde",
     button: "Consultar ahora",
     rooms: [
@@ -294,7 +298,11 @@ const content = {
   en: {
     badge: "Rooms Designed for Your Comfort",
     title: "Rooms",
-    desc: "Spaces designed to guarantee your rest and comfort. We offer 11 options ideal for business or leisure trips, fully equipped with Smart TV, high-speed Wi-Fi, and private bathroom. Find the perfect atmosphere to enjoy an exceptional stay in the heart of Arequipa.",
+    desc: [
+      "At Hotel Plaza San Antonio you will find the ideal space to enjoy a comfortable stay. We have 10 types of rooms, designed to meet the needs of corporate travelers, domestic and international tourists, and families, combining comfort, functionality, and personalized attention.",
+      "All our rooms have a fully equipped private bathroom with complimentary amenities, towels, a hairdryer, a shower, and 24-hour hot water. Additionally, they feature a Smart TV with cable channels, high-speed WiFi, a desk or work table, a closet, and comfortable beds that guarantee a restful sleep. Some categories also offer a terrace or balcony, from where you can enjoy a privileged view of the Plaza and Church of San Antonio and the majestic volcanoes Misti, Chachani, and Pichu Pichu.",
+      "Whether you are traveling for business, tourism, or with your family, you will find the ideal room to enjoy an experience of comfort, tranquility, and hospitality in the heart of Arequipa."
+    ],
     from: "From",
     button: "Inquire now",
     rooms: [
@@ -734,9 +742,13 @@ export default function RoomsPreview({ lang = 'es', showAll = false }: RoomsPrev
         <div className="text-center mb-10">
           <span className="text-brand-primary tracking-[0.2em] font-bold uppercase text-xs mb-4 block">{data.badge}</span>
           <h2 className="text-3xl md:text-4xl font-serif text-brand-text mb-4">{data.title}</h2>
-          <p className="text-brand-text-muted max-w-3xl mx-auto text-base leading-relaxed">
-            {data.desc}
-          </p>
+          <div className="text-brand-text-muted max-w-4xl mx-auto text-base leading-relaxed space-y-4">
+            {Array.isArray(data.desc) ? (
+              data.desc.map((p, i) => <p key={i}>{p}</p>)
+            ) : (
+              <p>{data.desc}</p>
+            )}
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12">
