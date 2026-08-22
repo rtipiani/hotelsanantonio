@@ -712,7 +712,7 @@ function RoomCard({ room, data, hoveredId, setHoveredId }: any) {
         }}
         className={clsx(
           "inline-flex items-center justify-center gap-2 w-full text-xs font-bold uppercase tracking-widest transition-all px-6 py-4 mt-auto",
-          "bg-brand-primary hover:bg-brand-primary-dark text-white shadow-sm hover:shadow-xl shadow-brand-primary/20 hover:shadow-brand-primary-dark/20 duration-300"
+          "bg-brand-primary hover:bg-brand-text text-white shadow-sm hover:shadow-xl shadow-brand-primary/20 hover:shadow-brand-text/20 duration-300"
         )}
       >
         <FaWhatsapp className={clsx(
@@ -765,7 +765,7 @@ export default function RoomsPreview({ lang = 'es', showAll = false }: RoomsPrev
         
         {!showAll && (
           <div className="text-center mt-12">
-            <a href={lang === 'en' ? "/en/habitaciones" : "/habitaciones"} className="inline-block border-2 border-brand-primary-dark text-brand-primary-dark hover:bg-brand-primary hover:text-white transition-colors px-8 py-3 uppercase tracking-widest text-sm font-bold">
+            <a href={lang === 'en' ? "/en/habitaciones" : "/habitaciones"} className="inline-block border-2 border-brand-primary text-brand-primary hover:bg-brand-text hover:border-brand-text hover:text-white transition-colors px-8 py-3 uppercase tracking-widest text-sm font-bold">
               {lang === 'en' ? "View all rooms" : "Ver todas las habitaciones"}
             </a>
           </div>

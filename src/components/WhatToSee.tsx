@@ -46,7 +46,7 @@ export default function WhatToSee({ lang = 'es' }: WhatToSeeProps) {
             <div className="pt-4">
               <a 
                 href={t.href}
-                className="inline-block cursor-pointer bg-brand-primary text-white px-8 py-4 rounded uppercase tracking-widest text-sm font-bold hover:bg-brand-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="inline-block cursor-pointer bg-brand-primary text-white px-8 py-4 rounded uppercase tracking-widest text-sm font-bold hover:bg-brand-text transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 {t.btn}
               </a>

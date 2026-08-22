@@ -209,7 +209,7 @@ export default function HeroSlider({ lang = 'es' }: HeroSliderProps) {
             <div>
               <a
                 href={slides[current].buttonLink}
-                className="inline-block bg-brand-primary text-white hover:bg-brand-primary-dark px-10 py-4 uppercase text-sm tracking-widest font-bold transition-all hover:scale-105 shadow-xl shadow-brand-primary/30"
+                className="inline-block bg-brand-primary text-white hover:bg-brand-text px-10 py-4 uppercase text-sm tracking-widest font-bold transition-all hover:scale-105 shadow-xl shadow-brand-primary/30 hover:shadow-brand-text/30"
               >
                 {slides[current].buttonText}
               </a>

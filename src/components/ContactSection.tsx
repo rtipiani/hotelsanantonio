@@ -188,7 +188,7 @@ export default function ContactSection({ lang = 'es' }: ContactSectionProps) {
 
               <button 
                 type="submit" 
-                className="w-full bg-brand-primary text-white font-bold uppercase tracking-[0.2em] text-[11px] py-4 hover:bg-brand-primary/90 transition-colors rounded-sm shadow-md hover:shadow-lg"
+                className="w-full bg-brand-primary text-white font-bold uppercase tracking-[0.2em] text-[11px] py-4 hover:bg-brand-text transition-colors rounded-sm shadow-md hover:shadow-lg"
               >
                 {t.submit}
               </button>
