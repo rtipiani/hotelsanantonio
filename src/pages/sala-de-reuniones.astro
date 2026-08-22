@@ -11,12 +11,12 @@ import Footer from '../components/Footer.astro';
       <span class="text-brand-primary font-bold uppercase tracking-widest text-sm mb-2 block">Eventos y Negocios</span>
       <h2 class="text-4xl md:text-5xl font-serif text-brand-text mb-6">Sala de Reuniones</h2>
       <div class="text-left max-w-5xl mx-auto mb-16 mt-8">
-        <p class="text-brand-text-muted text-base leading-relaxed mb-12 text-center max-w-3xl mx-auto">
-          Disponemos de una moderna sala de reuniones con capacidad para hasta <span class="font-medium text-brand-primary">35 personas</span>, diseñada para garantizar el éxito de sus eventos.
+        <p class="text-brand-text-muted text-sm leading-relaxed mb-12 text-center max-w-3xl mx-auto font-light">
+          Disponemos de una moderna sala de reuniones con capacidad para hasta <span class="font-normal text-brand-primary">35 personas</span>, diseñada para garantizar el éxito de sus eventos.
         </p>
         
         <div class="mb-12">
-          <h3 class="text-lg font-bold text-brand-text mb-6 text-center uppercase tracking-wide">Ideal para</h3>
+          <h3 class="text-base font-bold text-brand-text mb-6 text-center uppercase tracking-wide">Ideal para</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 px-4 md:px-0">
             {[
               "Reuniones corporativas", 
@@ -33,7 +33,7 @@ import Footer from '../components/Footer.astro';
                 <svg class="w-5 h-5 text-brand-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
-                <span class="text-brand-text-muted text-sm font-medium">{item}</span>
+                <span class="text-brand-text-muted text-sm font-light">{item}</span>
               </div>
             ))}
           </div>
@@ -44,7 +44,7 @@ import Footer from '../components/Footer.astro';
             <svg class="w-6 h-6 mx-auto mb-4 text-brand-primary opacity-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
             </svg>
-            <p class="text-sm md:text-base leading-relaxed text-white/90">
+            <p class="text-sm leading-relaxed text-white/90 font-light">
               La sala ofrece una hermosa vista a la <span class="text-brand-primary font-medium">Plaza e Iglesia San Antonio</span> y acceso directo a una amplia terraza, proporcionando un ambiente cómodo, iluminado y verdaderamente profesional.
             </p>
           </div>
@@ -60,7 +60,7 @@ import Footer from '../components/Footer.astro';
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                 </svg>
               </div>
-              <h3 class="text-lg font-bold text-brand-text uppercase tracking-wide">Configuraciones</h3>
+              <h3 class="text-base font-bold text-brand-text uppercase tracking-wide">Configuraciones</h3>
             </div>
             <ul class="space-y-3">
               {["Montaje tipo Escuela", "Montaje tipo Gerencial"].map(item => (
@@ -68,7 +68,7 @@ import Footer from '../components/Footer.astro';
                   <svg class="w-4 h-4 text-brand-primary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span class="text-brand-text-muted text-sm">{item}</span>
+                  <span class="text-brand-text-muted text-sm font-light">{item}</span>
                 </li>
               ))}
             </ul>
@@ -81,7 +81,7 @@ import Footer from '../components/Footer.astro';
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 class="text-lg font-bold text-brand-text uppercase tracking-wide">Equipamiento</h3>
+              <h3 class="text-base font-bold text-brand-text uppercase tracking-wide">Equipamiento</h3>
             </div>
             <ul class="space-y-3">
               {[
@@ -98,7 +98,7 @@ import Footer from '../components/Footer.astro';
                   <svg class="w-4 h-4 text-brand-primary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span class="text-brand-text-muted text-sm">{item}</span>
+                  <span class="text-brand-text-muted text-sm font-light">{item}</span>
                 </li>
               ))}
             </ul>
@@ -113,10 +113,10 @@ import Footer from '../components/Footer.astro';
             </svg>
           </div>
           <div>
-            <p class="text-brand-text-muted mb-2 text-sm leading-relaxed">
+            <p class="text-brand-text-muted mb-2 text-sm leading-relaxed font-light">
               Los huéspedes alojados podrán solicitar el uso de la sala para reuniones individuales o actividades internas, sujeto a disponibilidad y coordinación previa.
             </p>
-            <p class="text-brand-text font-medium text-sm leading-relaxed">
+            <p class="text-brand-text font-normal text-sm leading-relaxed">
               Cuando la reunión incluya invitados externos o requiera montaje especial, se ofrecerán <span class="text-brand-primary font-bold">tarifas preferenciales</span> para huéspedes.
             </p>
           </div>
