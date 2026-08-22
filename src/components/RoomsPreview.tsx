@@ -217,19 +217,19 @@ const content = {
       },
       {
         id: 11,
-        name: "Habitación Cuádruple Estándar",
-        description: "Amplia y confortable habitación con baño privado, equipada con una cama matrimonial y dos camas adicionales de 1½ plazas. Ideal para familias con niños o grupos de amigos que buscan comodidad, amplitud y un ambiente acogedor para disfrutar de una estancia placentera en Arequipa.",
+        name: "Habitación Cuádruple Económica",
+        description: "Cómoda y funcional habitación con baño privado, equipada con 1 cama matrimonial + 2 camas de 1½ plazas. Ideal para familias o grupos de viajeros que buscan comodidad y una distribución práctica.",
         image: "/cuadruple_estandar/cuadruple_estandar1.avif",
         images: [
           "/cuadruple_estandar/cuadruple_estandar1.avif",
           "/cuadruple_estandar/cuadruple_estandar2.avif",
           "/cuadruple_estandar/cuadruple_estandar3.avif"
         ],
-        price: "S/ 150",
+        price: "S/ 160",
         features: [
           "Hasta 4 huéspedes",
           "29 m²",
-          "Smart TV de 32\" con canales por cable",
+          "Smart TV, con canales por cable",
           "WiFi de alta velocidad",
           "Amenidades de cortesía",
           "Secador de cabello",
@@ -237,8 +237,7 @@ const content = {
           "Agua caliente las 24 horas",
           "Mesa de trabajo",
           "Clóset",
-          "Enchufes de 220 V junto a la cama",
-          "Desayuno americano incluido"
+          "Desayuno incluido"
         ]
       },
       {
@@ -505,19 +504,19 @@ const content = {
       },
       {
         id: 11,
-        name: "Standard Quadruple Room",
-        description: "Spacious and comfortable room with a private bathroom, equipped with one double matrimonial bed and two additional twin-size (1½ plaza) beds. Ideal for families with children or groups of friends seeking comfort, generosity of space, and a cozy environment for a delightful stay in Arequipa.",
+        name: "Economy Quadruple Room",
+        description: "Comfortable and functional room with a private bathroom, equipped with 1 double matrimonial bed + 2 twin-size (1½ plaza) beds. Ideal for families or groups of travelers seeking comfort and a practical layout.",
         image: "/cuadruple_estandar/cuadruple_estandar1.avif",
         images: [
           "/cuadruple_estandar/cuadruple_estandar1.avif",
           "/cuadruple_estandar/cuadruple_estandar2.avif",
           "/cuadruple_estandar/cuadruple_estandar3.avif"
         ],
-        price: "S/ 150",
+        price: "S/ 160",
         features: [
           "Up to 4 guests",
           "29 m²",
-          "32\" Smart TV with cable channels",
+          "Smart TV with cable channels",
           "High-speed Wi-Fi",
           "Complimentary amenities",
           "Hairdryer",
@@ -525,8 +524,7 @@ const content = {
           "24-hour hot water",
           "Work table",
           "Closet",
-          "220V bedside power outlets",
-          "American breakfast included"
+          "Breakfast included"
         ]
       },
       {
