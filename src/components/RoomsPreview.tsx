@@ -647,8 +647,8 @@ function RoomCard({ room, data, hoveredId, setHoveredId }: any) {
         </div>
         
         {/* Price tag */}
-        <div className="absolute top-4 right-4 z-20 bg-brand-text-muted px-4 py-2 flex flex-col items-center border-b-4 border-brand-primary shadow-md">
-          <p className="text-[10px] uppercase tracking-widest text-white mb-1.5">{data.from}</p>
+        <div className="absolute top-4 right-4 z-20 bg-brand-text px-4 py-2 flex flex-col items-center border-b-4 border-brand-primary shadow-md">
+          <span className="text-white text-xs uppercase tracking-wider mb-1">{data.from}</span>
           <div className="w-full h-px bg-brand-primary mb-1.5"></div>
           <p className="text-2xl font-serif text-white">{room.price}</p>
         </div>
