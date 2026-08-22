@@ -173,24 +173,23 @@ const content = {
       {
         id: 10,
         name: "Habitación Triple Económica",
-        description: "Acogedora habitación de diseño compacto con baño privado, equipada con tres camas individuales. Una excelente opción para familias o grupos de amigos que buscan comodidad, funcionalidad y una excelente relación calidad-precio durante su estadía en Arequipa.",
+        description: "Acogedora y funcional habitación con tres camas de 1½ plazas y baño privado de diseño compacto. Ideal para familias o grupos de viajeros que buscan comodidad y una excelente relación calidad-precio.",
         image: "/triple_economica/triple_economica1.avif",
         images: [
           "/triple_economica/triple_economica1.avif"
         ],
-        price: "S/ 117",
+        price: "S/ 120",
         features: [
           "Hasta 3 huéspedes",
-          "19 m²",
-          "Smart TV de 32\" con canales por cable",
+          "21 m²",
+          "Smart TV, con canales por cable",
           "WiFi de alta velocidad",
           "Amenidades de cortesía",
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Mesa de trabajo",
           "Clóset",
-          "Enchufes de 220 V junto a la cama",
-          "Desayuno americano incluido"
+          "Desayuno incluido"
         ]
       },
       {
@@ -462,24 +461,23 @@ const content = {
       {
         id: 10,
         name: "Economy Triple Room",
-        description: "Cozy room with a compact design and private bathroom, equipped with three single beds. An excellent option for families or groups of friends seeking comfort, functionality, and an extraordinary value during their stay in Arequipa.",
+        description: "Cozy and functional room with three twin-size (1½ plaza) beds and a compact private bathroom. Ideal for families or groups of travelers seeking comfort and an excellent quality-price ratio.",
         image: "/triple_economica/triple_economica1.avif",
         images: [
           "/triple_economica/triple_economica1.avif"
         ],
-        price: "S/ 117",
+        price: "S/ 120",
         features: [
           "Up to 3 guests",
-          "19 m²",
-          "32\" Smart TV with cable channels",
+          "21 m²",
+          "Smart TV with cable channels",
           "High-speed Wi-Fi",
           "Complimentary amenities",
           "Hairdryer",
           "24-hour hot water",
           "Work table",
           "Closet",
-          "220V bedside power outlets",
-          "American breakfast included"
+          "Breakfast included"
         ]
       },
       {
