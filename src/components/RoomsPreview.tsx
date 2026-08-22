@@ -636,7 +636,7 @@ function RoomCard({ room, data, hoveredId, setHoveredId }: any) {
         {room.name}
       </h3>
       
-      <p className="text-brand-text-muted text-sm leading-relaxed mb-6 line-clamp-2">
+      <p className="text-brand-text-muted text-sm leading-relaxed mb-6">
         {room.description}
       </p>
 
