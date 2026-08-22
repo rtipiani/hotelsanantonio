@@ -196,25 +196,24 @@ const content = {
       {
         id: 9,
         name: "Habitación Triple Estándar",
-        description: "Amplia y confortable habitación con baño privado, equipada con tres camas individuales y ventana con vista exterior, que brinda una excelente iluminación y ventilación natural. Ideal para familias, grupos de amigos o compañeros de viaje que buscan comodidad, amplitud y una estancia placentera en Arequipa.",
+        description: "Amplia y confortable habitación con baño privado, equipada con tres camas de 1½ plazas y ventana con vista exterior que brinda iluminación y ventilación natural. Ideal para familias o grupos de viajeros.",
         image: "/triple_estandar/triple_estandar1.avif",
         images: [
           "/triple_estandar/triple_estandar1.avif",
           "/triple_estandar/triple_estandar2.avif"
         ],
-        price: "S/ 125",
+        price: "S/ 130",
         features: [
           "Hasta 3 huéspedes",
           "25 m²",
-          "Smart TV de 32\" con canales por cable",
+          "Smart TV, con canales por cable",
           "WiFi de alta velocidad",
           "Amenidades de cortesía",
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Mesa de trabajo",
           "Clóset",
-          "Enchufes de 220 V junto a la cama",
-          "Desayuno americano incluido"
+          "Desayuno incluido"
         ]
       },
       {
@@ -486,25 +485,24 @@ const content = {
       {
         id: 9,
         name: "Standard Triple Room",
-        description: "Spacious and comfortable room with a private bathroom, equipped with three single beds and an exterior window that affords excellent natural lighting and ventilation. Ideal for families, groups of friends, or travel companions seeking comfort, space, and a pleasant stay in Arequipa.",
+        description: "Spacious and comfortable room with a private bathroom, equipped with three twin-size (1½ plaza) beds and an exterior window that provides natural lighting and ventilation. Ideal for families or groups of travelers.",
         image: "/triple_estandar/triple_estandar1.avif",
         images: [
           "/triple_estandar/triple_estandar1.avif",
           "/triple_estandar/triple_estandar2.avif"
         ],
-        price: "S/ 125",
+        price: "S/ 130",
         features: [
           "Up to 3 guests",
           "25 m²",
-          "32\" Smart TV with cable channels",
+          "Smart TV with cable channels",
           "High-speed Wi-Fi",
           "Complimentary amenities",
           "Hairdryer",
           "24-hour hot water",
           "Work table",
           "Closet",
-          "220V bedside power outlets",
-          "American breakfast included"
+          "Breakfast included"
         ]
       },
       {
