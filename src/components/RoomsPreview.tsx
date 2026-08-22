@@ -692,7 +692,7 @@ export default function RoomsPreview({ lang = 'es', showAll = false }: RoomsPrev
         <div className="text-center mb-10">
           <span className="text-brand-primary tracking-[0.2em] font-bold uppercase text-xs mb-4 block">{data.badge}</span>
           <h2 className="text-3xl md:text-4xl font-serif text-brand-text mb-4">{data.title}</h2>
-          <div className="text-brand-text-muted max-w-4xl mx-auto text-base leading-relaxed space-y-4">
+          <div className="text-brand-text-muted max-w-4xl mx-auto text-sm leading-relaxed space-y-4 text-center">
             {Array.isArray(data.desc) ? (
               data.desc.map((p, i) => <p key={i}>{p}</p>)
             ) : (
