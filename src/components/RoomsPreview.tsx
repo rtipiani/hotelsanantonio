@@ -101,7 +101,7 @@ const content = {
       {
         id: 2,
         name: "Habitación Individual Superior",
-        description: "Disfrute de una amplia y confortable habitación con baño privado, equipada con una cama de 2 plazas. Diseñada para ofrecer mayor comodidad y confort, es ideal para viajeros de negocios o turismo que buscan una estancia placentera y un excelente descanso durante su visita a Arequipa.",
+        description: "Disfrute de una amplia y confortable habitación con baño privado y cama de 2 plazas. Diseñada para brindar mayor comodidad, es ideal para viajeros de negocios o turismo que buscan una estancia agradable y un excelente descanso.",
         image: "/individual_superior/individual_superior1.avif",
         images: [
           "/individual_superior/individual_superior1.avif",
@@ -112,15 +112,14 @@ const content = {
         features: [
           "1 huésped",
           "16 m²",
-          "Smart TV de 32\" con canales por cable",
+          "Smart TV, con canales por cable",
           "WiFi de alta velocidad",
           "Amenidades de cortesía",
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Escritorio y mesa de trabajo",
           "Clóset",
-          "Enchufes de 220 V junto a la cama",
-          "Desayuno americano incluido"
+          "Desayuno incluido"
         ]
       },
       {
@@ -397,7 +396,7 @@ const content = {
       {
         id: 2,
         name: "Superior Single Room",
-        description: "Enjoy a spacious and comfortable room with private bathroom, equipped with a full-size (2 plaza) bed. Designed to offer enhanced comfort and convenience, it is ideal for business or leisure travelers seeking a pleasant stay and exceptional rest during their visit to Arequipa.",
+        description: "Enjoy a spacious and comfortable room with a private bathroom and a full-size (2 plaza) bed. Designed to provide greater comfort, it is ideal for business or leisure travelers seeking a pleasant stay and excellent rest.",
         image: "/individual_superior/individual_superior1.avif",
         images: [
           "/individual_superior/individual_superior1.avif",
@@ -408,15 +407,14 @@ const content = {
         features: [
           "1 guest",
           "16 m²",
-          "32\" Smart TV with cable channels",
+          "Smart TV with cable channels",
           "High-speed Wi-Fi",
           "Complimentary amenities",
           "Hairdryer",
           "24-hour hot water",
           "Desk and work table",
           "Closet",
-          "220V bedside power outlets",
-          "American breakfast included"
+          "Breakfast included"
         ]
       },
       {
