@@ -8,18 +8,22 @@ const translations = {
   es: {
     badge: "¡Bienvenido a Hotel Plaza San Antonio!",
     title: "Su mejor experiencia en Arequipa comienza aquí.",
-    p1: "Descubra una experiencia de alojamiento única en la Ciudad Blanca. Combinamos tradición, hospitalidad y confort, ofreciendo la mejor atención para viajeros corporativos, turistas y familias.",
-    p2: "Ubicados frente a la histórica Plaza San Antonio, en una zona tranquila, estamos a solo 10 minutos de la Plaza de Armas, con rápido acceso a los principales atractivos de Arequipa.",
-    p3: "Disfrute de nuestro desayuno en la terraza panorámica con vista a los volcanes, y aproveche servicios como WiFi de alta velocidad, gimnasio, sala de reuniones y cochera privada.",
-    p4: "Cada detalle está pensado para brindarle una estadía memorable."
+    p1: "Descubra una nueva forma de hospedarse en la Ciudad Blanca. Hotel Plaza San Antonio es un hotel categoría 3 estrellas que combina tradición, hospitalidad y confort, ofreciendo una experiencia de alojamiento para viajeros corporativos, turistas nacionales e internacionales y familias que buscan calidad, excelente ubicación y una atención personalizada.",
+    p2: "Ubicados frente a la tradicional Plaza e Iglesia San Antonio, en una zona tranquila y segura, nos encontramos a solo 10 minutos a pie de la Plaza de Armas de Arequipa, con fácil acceso a los principales atractivos turísticos, culturales y gastronómicos de la ciudad.",
+    p3: "Contamos con acogedoras habitaciones Individuales, Superiores, Ejecutivas, Matrimoniales, Dobles y Familiares, varias de ellas con una privilegiada vista a la Plaza e Iglesia San Antonio y a los majestuosos volcanes Misti, Chachani y Pichu Pichu.",
+    p4: "Comience cada mañana con un delicioso desayuno en nuestra terraza panorámica, disfrutando de una espectacular vista a la Plaza San Antonio y al paisaje volcánico que distingue a Arequipa.",
+    p5: "Además, ponemos a su disposición WiFi de alta velocidad, gimnasio, sala de reuniones, cafetería, recepción las 24 horas, servicio de lavandería, información turística, estacionamiento privado exterior y cochera privada a media cuadra del hotel (sujeto a disponibilidad), todo acompañado de una atención cálida y profesional.",
+    p6: "En Hotel Plaza San Antonio, cada detalle está pensado para brindarle una estadía cómoda, segura y memorable."
   },
   en: {
     badge: "Welcome to Hotel Plaza San Antonio!",
     title: "Your best experience in Arequipa starts here.",
-    p1: "Discover a unique accommodation experience in the White City. We combine tradition, hospitality, and comfort, offering the best service for corporate travelers, tourists, and families.",
-    p2: "Located opposite the historic Plaza San Antonio in a quiet area, we are just 10 minutes from the Plaza de Armas, with quick access to Arequipa's main attractions.",
-    p3: "Enjoy breakfast on our panoramic terrace with views of the volcanoes, and take advantage of services like high-speed WiFi, gym, meeting room, and private parking.",
-    p4: "Every detail is designed to provide you with a memorable stay."
+    p1: "Discover a new way to stay in the White City. Hotel Plaza San Antonio is a 3-star hotel that combines tradition, hospitality, and comfort, offering an accommodation experience for corporate travelers, domestic and international tourists, and families seeking quality, excellent location, and personalized attention.",
+    p2: "Located across from the traditional Plaza and Church of San Antonio, in a quiet and safe area, we are just a 10-minute walk from the Plaza de Armas of Arequipa, with easy access to the main tourist, cultural, and gastronomic attractions of the city.",
+    p3: "We offer cozy Single, Superior, Executive, Matrimonial, Twin, and Family rooms, several of them with a privileged view of the Plaza and Church of San Antonio and the majestic volcanoes Misti, Chachani, and Pichu Pichu.",
+    p4: "Start each morning with a delicious breakfast on our panoramic terrace, enjoying a spectacular view of Plaza San Antonio and the volcanic landscape that distinguishes Arequipa.",
+    p5: "Additionally, we offer high-speed WiFi, a gym, a meeting room, a cafeteria, a 24-hour reception, laundry service, tourist information, private outdoor parking, and a private garage half a block from the hotel (subject to availability), all accompanied by warm and professional service.",
+    p6: "At Hotel Plaza San Antonio, every detail is designed to provide you with a comfortable, safe, and memorable stay."
   }
 };
 
@@ -38,7 +42,9 @@ export default function Welcome({ lang = 'es' }: WelcomeProps) {
             <p>{t.p1}</p>
             <p>{t.p2}</p>
             <p>{t.p3}</p>
-            <p className="font-semibold text-brand-text">{t.p4}</p>
+            <p>{t.p4}</p>
+            <p>{t.p5}</p>
+            <p className="font-semibold text-brand-text">{t.p6}</p>
           </div>
         </div>
         <div className="md:w-1/2 grid grid-cols-2 gap-6 relative">
