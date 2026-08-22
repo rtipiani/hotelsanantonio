@@ -9,8 +9,8 @@ const slidesData = {
       id: 1,
       image: "/sliders/slide6.avif",
       subtitle: "A 10 min de la Plaza de Armas",
-      title: "Tu Refugio Urbano",
-      description: "Tranquilidad a pasos del centro. El equilibrio perfecto para tus viajes corporativos o familiares en Miraflores, Arequipa.",
+      title: "TU REFUGIO URBANO",
+      description: "Tranquilidad a pocos minutos del Centro Histórico, ideal para viajes corporativos, turísticos y familiares.",
       buttonText: "Descubrir Habitaciones",
       buttonLink: "/habitaciones"
     },
@@ -74,8 +74,8 @@ const slidesData = {
       id: 1,
       image: "/sliders/slide6.avif",
       subtitle: "10 mins from the Main Square",
-      title: "Your Urban Haven",
-      description: "Tranquility steps away from downtown. The perfect balance for your corporate or family trips in Miraflores, Arequipa.",
+      title: "YOUR URBAN HAVEN",
+      description: "Tranquility just minutes from the Historic Center, ideal for corporate, tourist, and family trips.",
       buttonText: "Discover Rooms",
       buttonLink: "/en/habitaciones"
     },
