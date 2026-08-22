@@ -14,7 +14,7 @@ const content = {
       {
         id: 4,
         name: "Habitación Matrimonial Estándar",
-        description: "Confortable habitación con baño privado, equipada con una cama matrimonial y vista exterior. Destaca por su excelente iluminación y ventilación natural, ofreciendo un ambiente acogedor y confortable. Es ideal para parejas, matrimonios o amigos que buscan una estancia placentera en la ciudad de Arequipa.",
+        description: "Confortable habitación con baño privado, cama matrimonial y vista exterior. Cuenta con excelente iluminación y ventilación natural, ideal para parejas en viajes de ocio y huéspedes que buscan una estancia agradable y un descanso confortable.",
         image: "/matrimonial_estandar/matrimonial_estandar1.avif",
         images: [
           "/matrimonial_estandar/matrimonial_estandar1.avif",
@@ -25,19 +25,18 @@ const content = {
           "/matrimonial_estandar/matrimonial_estandar6.avif",
           "/matrimonial_estandar/matrimonial_estandar7.avif"
         ],
-        price: "S/ 105",
+        price: "S/ 110",
         features: [
           "Hasta 2 huéspedes",
           "18 m²",
-          "Smart TV de 32\" con canales por cable",
+          "Smart TV, con canales por cable",
           "WiFi de alta velocidad",
           "Amenidades de cortesía",
           "Secador de cabello",
           "Agua caliente las 24 horas",
           "Mesa de trabajo",
           "Clóset",
-          "Enchufes de 220 V junto a la cama",
-          "Desayuno americano incluido"
+          "Desayuno incluido"
         ]
       },
       {
@@ -309,7 +308,7 @@ const content = {
       {
         id: 4,
         name: "Standard Matrimonial Room",
-        description: "Comfortable room with private bathroom, equipped with a double matrimonial bed and an exterior view. It stands out for its excellent natural lighting and ventilation, offering a warm and welcoming ambiance. It is ideal for couples, partners, or friends seeking a delightful stay in the city of Arequipa.",
+        description: "Comfortable room with private bathroom, double matrimonial bed and exterior view. It features excellent natural lighting and ventilation, ideal for couples on leisure trips and guests seeking a pleasant stay and comfortable rest.",
         image: "/matrimonial_estandar/matrimonial_estandar1.avif",
         images: [
           "/matrimonial_estandar/matrimonial_estandar1.avif",
@@ -320,19 +319,18 @@ const content = {
           "/matrimonial_estandar/matrimonial_estandar6.avif",
           "/matrimonial_estandar/matrimonial_estandar7.avif"
         ],
-        price: "S/ 105",
+        price: "S/ 110",
         features: [
           "Up to 2 guests",
           "18 m²",
-          "32\" Smart TV with cable channels",
+          "Smart TV with cable channels",
           "High-speed Wi-Fi",
           "Complimentary amenities",
           "Hairdryer",
           "24-hour hot water",
           "Work table",
           "Closet",
-          "220V bedside power outlets",
-          "American breakfast included"
+          "Breakfast included"
         ]
       },
       {
